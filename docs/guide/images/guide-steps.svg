@@ -65,7 +65,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="-57.709612"
+     inkscape:cx="4.1977406"
      inkscape:cy="287.00674"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -149,38 +149,34 @@
            r="18.68782" />
       </g>
     </a>
-    <circle
-       r="18.68782"
-       cy="166.0009"
-       cx="296.59064"
-       id="circle4229"
-       style="fill:#ffffff;fill-opacity:1;stroke:#585858;stroke-width:6;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="208.44254"
-       y="169.49211"
-       id="text4231"
-       sodipodi:linespacing="125%"
-       inkscape:transform-center-x="-48.571429"
-       inkscape:transform-center-y="0.71428572"><tspan
-         y="169.49211"
-         x="208.44254"
-         id="tspan4233"
-         sodipodi:role="line">Architecture styles</tspan></text>
-    <text
-       inkscape:transform-center-y="0.71428572"
-       inkscape:transform-center-x="-48.571429"
-       sodipodi:linespacing="125%"
-       id="text4235"
-       y="183.77885"
-       x="433.49445"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         sodipodi:role="line"
-         id="tspan4237"
-         x="433.49445"
-         y="183.77885">Reference architectures</tspan></text>
+    <a
+       id="a4199"
+       xlink:href="https://review.docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/?branch=a3g">
+      <g
+         class="more_info"
+         inkscape:label="#g4194"
+         id="arch-styles-group">
+        <circle
+           r="18.68782"
+           cy="166.0009"
+           cx="296.59064"
+           id="circle4229"
+           style="fill-opacity:1;stroke:#585858;stroke-width:6;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="208.44254"
+           y="169.49211"
+           id="text4231"
+           sodipodi:linespacing="125%"
+           inkscape:transform-center-x="-48.571429"
+           inkscape:transform-center-y="0.71428572"><tspan
+             y="169.49211"
+             x="208.44254"
+             id="tspan4233"
+             sodipodi:role="line">Architecture styles</tspan></text>
+      </g>
+    </a>
     <circle
        style="fill:#ffffff;fill-opacity:1;stroke:#585858;stroke-width:6;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="circle4239"
@@ -200,12 +196,38 @@
          id="tspan4243"
          x="213.54507"
          y="381.59058">Design principles</tspan></text>
-    <circle
-       style="fill:#ffffff;fill-opacity:1;stroke:#585858;stroke-width:6;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="circle4245"
-       cx="403.66577"
-       cy="210.40916"
-       r="18.68782" />
+    <a
+       id="a4200"
+       xlink:href="https://docs.microsoft.com/azure/architecture/reference-architectures/">
+      <g
+         inkscape:label="#g4209"
+         id="ref-arch-group"
+         class="more_info">
+        <text
+           inkscape:transform-center-y="0.71428572"
+           inkscape:transform-center-x="-48.571429"
+           sodipodi:linespacing="125%"
+           id="text4235"
+           y="166.64687"
+           x="403.60779"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             sodipodi:role="line"
+             id="tspan4205"
+             x="403.60779"
+             y="166.64687">Reference</tspan><tspan
+             sodipodi:role="line"
+             id="tspan4207"
+             x="403.60779"
+             y="182.27187">architectures</tspan></text>
+        <circle
+           style="fill-opacity:1;stroke:#585858;stroke-width:6;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="circle4245"
+           cx="403.66577"
+           cy="210.40916"
+           r="18.68782" />
+      </g>
+    </a>
     <text
        inkscape:transform-center-y="0.71428572"
        inkscape:transform-center-x="-48.571429"
@@ -249,17 +271,17 @@
        inkscape:transform-center-x="-48.571429"
        sodipodi:linespacing="125%"
        id="text4241-6"
-       y="455.55283"
+       y="447.80441"
        x="212.5947"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          sodipodi:role="line"
          id="tspan4243-2"
          x="212.5947"
-         y="455.55283">Pillars of software</tspan><tspan
+         y="447.80441">Pillars of software</tspan><tspan
          sodipodi:role="line"
          x="212.5947"
-         y="471.17783"
+         y="463.42941"
          id="tspan4445">quality</tspan></text>
     <path
        sodipodi:nodetypes="cc"
