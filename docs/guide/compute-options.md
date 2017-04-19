@@ -13,6 +13,8 @@
 | Dedicated network | Supported | Supported <a href="#note5">[5]</a> | Supported | Not supported | Supported | Supported <a href="#note6">[6]</a> | Supported |
 | Hybrid connectivity | Supported | Supported <a href="#note1">[7]</a>  | Supported | Not supported | Supported | Supported <a href="#note8">[8]</a> | Supported |
 
+Notes
+
 <span id="note1">1. If using Consumption plan. If using App Service plan, functions run on the VMs allocated for your App Service plan. See [Choose the correct service plan for Azure Functions][function-plans].</a>
 
 <span id="note2">2. Higher SLA with two or more instances.</a>
@@ -28,6 +30,18 @@
 <span id="note7">7. Requires ASE or BizTalk Hybrid Connections</a>
 
 <span id="note8">8. Classic VNet, or Resource Manager VNet via VNet peering</a>
+
+
+Notes
+
+1. <span id="note1">If using Consumption plan. If using App Service plan, functions run on the VMs allocated for your App Service plan. See [Choose the correct service plan for Azure Functions][function-plans].</a>
+2. <span id="note2">Higher SLA with two or more instances.</a>
+3. <span id="note3">For production environments.</a>
+4. <span id="note4">Can scale down to zero after job completes.</a>
+5. <span id="note5">Requires App Service Environment (ASE).</a>
+6. <span id="note6">Classic VNet only.</a>
+7. <span id="note7">Requires ASE or BizTalk Hybrid Connections</a>
+8. <span id="note8">Classic VNet, or Resource Manager VNet via VNet peering</a>
 
 
 | Criteria | Virtual Machine | App Service | Service Fabric | Azure Functions | Azure Container Service | Cloud Services | Azure Batch |
