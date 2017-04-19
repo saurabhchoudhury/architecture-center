@@ -1,6 +1,6 @@
 # [Application Architecture Guide](./index.md)
 
-## [Domain analysis](./domain-analysis.md)
+## [Overview](./index.md)
 
 ## [Architecture styles](./architecture-styles/index.md)
 ### [N-tier application](./architecture-styles/n-tier.md)
@@ -11,9 +11,7 @@
 ### [Big Compute](./architecture-styles/big-compute.md)
 ### [Big Data](./architecture-styles/big-data.md)
 
-## Compute options
-
-## Storage options
+## Choosing technologies
 
 ## [Design principles](./design-principles/index.md)
 ### [Use managed services](./design-principles/managed-services.md)
@@ -27,3 +25,4 @@
 ### [Design for operations](./design-principles/design-for-operations.md)
 ### [Build for the needs of business](./design-principles/build-for-business.md)
 
+## Design pillars
