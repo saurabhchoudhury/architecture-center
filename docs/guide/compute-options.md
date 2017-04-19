@@ -1,23 +1,19 @@
+# Compute options
 
 <table>
-<tr><td>Criteria</td><td>Virtual Machine</td><td>Cloud Service</td><td>Service Fabric</td><td>App Service</td><td>Azure Functions</td><td>ACS</td><td>Azure Batch</td></tr></td></tr>
+<tr><th>Criteria</td><th>Virtual Machine</th><th>Cloud Service</th><th>Service Fabric</th><th>App Service</th><th>Azure Functions</th><th>ACS</th><th>Azure Batch</th></tr>
 <tr><td colspan="8">Hosting model</td></tr>
+<tr><td>Programming model</td><td>Agnostic</td><td>Web role, worker role</td><td>Guest executable, Service model, Actor model, Containers</td><td>Web application, WebJobs for background tasks</td><td>Functions with triggers</td><td>Agnostic</td><td>Command line application</td></tr>
 <tr><td>Application composition</td><td>Agnostic</td><td>Roles</td><td>Services</td><td>Application</td><td>Function</td><td>Agnostic</td><td>Scheduled jobs </td></tr>
 <tr><td>Density</td><td>1 application per VM</td><td>One role instance per VM</td><td>Multiple services per VM</td><td>Multiple apps per instance</td><td>No dedicated instances <a href="#note1">[1]</a></td><td>Multiple containers per VM</td><td>Multiple apps per VM</td></tr>
-<tr><td>Minimum number of instances</td><td>1 <a href="#note2">[2]</a></td><td>2</td><td>5 <a href="#note3">[3]</a></td><td>1</td><td>No dedicated instances <a href="#note4">[4]</td><td>3</td><td>1  <a href="#note4">[4]</a></td></tr>
+<tr><td>Minimum number of instances</td><td>1 <a href="#note2">[2]</a></td><td>2</td><td>5 <a href="#note3">[3]</a></td><td>1</td><td>N/A <a href="#note1">[1]</td><td>3</td><td>1  <a href="#note4">[4]</a></td></tr>
 <tr><td>State management</td><td>Stateless or Stateful</td><td>Stateless</td><td>Stateless or stateful</td><td>Stateless</td><td>Stateless</td><td>Stateless or Stateful</td><td>Stateless</td></tr>
 <tr><td>Web hosting</td><td>Agnostic</td><td>Built-in (IIS)</td><td>Self-host<br/>IIS in containers</td><td>Built in</td><td>Not applicable</td><td>Agnostic</td><td>None</td></tr>
 <tr><td>OS</td><td>Windows, Linux</td><td>Windows</td><td>Windows, Linux [preview]</td><td>Windows, Linux [preview]</td><td>N/A</td><td>Windows, Linux</td><td>Windows, Linux</td></tr>
 <tr><td>Dedicated network</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported <a href="#note5">[5]</td><td>Not supported</td><td>Supported</td><td>Supported</td></tr>
 <tr><td>Hybrid connectivity</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported <a href="#note6">[6]</td><td>Not supported</td><td>Supported</td><td>Supported</td></tr>
 <tr><td colspan="8">DevOps</td></tr>
-<tr><td>Local debugging</td><td>Agnostic</td><td>Local emulator</td><td>Local node cluster</td><td>IIS Express, others[ ] </td></tr>
-<tr><td>Azure Functions CLI</td><td>Local container runtime</td><td>Not supported</td></tr>
-<tr><td>Programming model</td><td>Agnostic</td><td>Web role / worker role</td><td>Guest executable,</td></tr>
-<tr><td>Service model with entry point,</td></tr>
-<tr><td>Virtual actor model,</td></tr>
-<tr><td>Containers</td><td>Web application,</td></tr>
-<tr><td>WebJobs for background tasks</td><td>Functions with triggers</td><td>Agnostic</td><td>Command line application</td></tr>
+<tr><td>Local debugging</td><td>Agnostic</td><td>Local emulator</td><td>Local node cluster</td><td>IIS Express, others <a href="#note7">[7]</td><td>Azure Functions CLI</td><td>Local container runtime</td><td>Not supported</td></tr>
 <tr><td>Deployment</td><td>Resource Manager</td><td>Resource manager</td></tr>
 <tr><td>Classic</td><td>Resource Manager</td><td>Resource Manager</td><td>Resource Manager</td><td>Resource Manager</td><td>Resource Manager</td></tr>
 <tr><td>Application update</td><td>No built-in support</td><td>VIP swap or rolling update</td></tr>
@@ -56,3 +52,11 @@
 <tr></tr>
 <tr></tr>
 </table>
+
+<span id=note1>1.</span> If using Consumption plan. If using App Service plan, functions run on the VMs allocated for your App Service plan. For more information, see .
+<span id=note2>2.</span> Higher SLA with 2 or more instances
+<span id=note3>3.</span> For production environments
+<span id=note4>4.</span> Can scale down to zero after job completes
+<span id=note5>5.</span> Requires ASE
+<span id=note6>6.</span> Requires ASE or BizTalk Hybrid Connections
+<span id=note7>7.</span> Options include: IIS Express for ASP.NET or node.js (iisnode); PHP web server; Azure Toolkit for IntelliJ, Azure Toolkit for Eclipse. App Service also supports remote debugging of deployed web app.
