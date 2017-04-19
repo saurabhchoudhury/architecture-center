@@ -1,4 +1,4 @@
-# [Application Architecture Guide](./index.md)
+# Application Architecture Guide
 
 ## [Overview](./index.md)
 
