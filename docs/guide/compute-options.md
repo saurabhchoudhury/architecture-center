@@ -29,7 +29,7 @@ Notes
 | Criteria | Virtual Machine | App Service | Service Fabric | Azure Functions | Azure Container Service | Cloud Services | Azure Batch |
 |----------|-----------------|-------------|----------------|-----------------|-------------------------|----------------|-------------|
 | Local debugging | Agnostic | IIS Express, others <a href="#note1b">[1]</a> | Local node cluster | Azure Functions CLI | Local container runtime | Local emulator | Not supported |
-| Programming model | Agnostic | Web application, WebJobs for background tasks | Guest executable, Service model, Actor model, Containers | Functions with triggers | Agnostic | Web role / worker role | Command line application |
+| Programming model | Agnostic | Web application, WebJobs for background tasks | Guest executable, Service model, Actor model, Containers | Functions with triggers | Agnostic | Web role, worker role | Command line application |
 | Application update | No built-in support | Deployment slots | Rolling upgrade (per service) | No built-in support | Depends on orchestrator. Most support rolling updates | VIP swap or rolling update | N/A |
 
 Notes
@@ -43,7 +43,7 @@ Notes
 |----------|-----------------|-------------|----------------|-----------------|-------------------------|----------------|-------------|
 | Auto-scaling | VM scale sets | Built-in service | VM Scale Sets, Built-in for application scaling. | Built-in service | Not supported | Built-in service | N/A |
 | Load balancer | Azure Load Balancer | Integrated | Azure Load Balancer | Integrated | Azure Load Balancer | Integrated | Azure Load Balancer |
-| Scale limit | Platform image: 1000 nodes per VMSS, Custom image: 100 nodes per VMSS | 20 instances, 50 with App Service Environment | 100 nodes per VMSS | Infinite <a href="#note1c">[1]</a> | 100 | No defined limit (200 maximum recommended | 20 core limit by default. Contact customer service for increase. |
+| Scale limit | Platform image: 1000 nodes per VMSS, Custom image: 100 nodes per VMSS | 20 instances, 50 with App Service Environment | 100 nodes per VMSS | Infinite <a href="#note1c">[1]</a> | 100 | No defined limit, 200 maximum recommended | 20 core limit by default. Contact customer service for increase. |
 
 Notes
 
@@ -53,14 +53,14 @@ Notes
 
 | Criteria | Virtual Machine | App Service | Service Fabric | Azure Functions | Azure Container Service | Cloud Services | Azure Batch |
 |----------|-----------------|-------------|----------------|-----------------|-------------------------|----------------|-------------|
-| SLA | SLA for Virtual Machines | SLA for App Service | SLA for Service Fabric | SLA for Functions | SLA for Azure Container Service | SLA for Cloud Services | SLA for Azure Batch |
+| SLA | [SLA for Virtual Machines][sla-vm] | [SLA for App Service][sla-app-service] | [SLA for Service Fabric][sla-sf] | [SLA for Functions][sla-functions] | [SLA for Azure Container Service][sla-acs] | [SLA for Cloud Services][sla-cloud-service] | [SLA for Azure Batch][sla-batch] |
 | Multi region failover | Traffic manager | Traffic manager | Traffic manager, Multi-Region Cluster | Not supported	 | Traffic manager | Traffic manager | Not Supported |
 
 ## Security
 
 | Criteria | Virtual Machine | App Service | Service Fabric | Azure Functions | Azure Container Service | Cloud Services | Azure Batch |
 |----------|-----------------|-------------|----------------|-----------------|-------------------------|----------------|-------------|
-| SSL | Configured in VM | Supported | Supported  | Supported | Configured in VM | Supported  Supported |
+| SSL | Configured in VM | Supported | Supported  | Supported | Configured in VM | Supported | Supported |
 | RBAC | Supported | Supported | Supported | Supported | Supported | Not supported | Supported |
 | Security Center | Supported | Not supported  | Not supported | Not supported  | Not supported  | Supported | Not supported  |
 
@@ -68,8 +68,14 @@ Notes
 
 | Criteria | Virtual Machine | App Service | Service Fabric | Azure Functions | Azure Container Service | Cloud Services | Azure Batch |
 |----------|-----------------|-------------|----------------|-----------------|-------------------------|----------------|-------------|
-| Suitable architecture styles | Lift-and-shift, N-Tier | Web Queue Worker | Microservices, Event driven architecture (EDA) | Microservices, EDA | Microservices, EDA | Web Queue Worker | Big Compute |
-| Limitations |  | | | | | | |
+| Suitable architecture styles | Lift-and-shift, N-Tier | Web-Queue-Worker | Microservices, Event driven architecture (EDA) | Microservices, EDA | Microservices, EDA | Web-Queue-Worker | Big Compute |
 
 
 [function-plans]: /azure/azure-functions/functions-scale
+[sla-acs]: https://azure.microsoft.com/support/legal/sla/container-service/
+[sla-app-service]: https://azure.microsoft.com/support/legal/sla/app-service/
+[sla-batch]: https://azure.microsoft.com/support/legal/sla/batch/
+[sla-cloud-service]: https://azure.microsoft.com/support/legal/sla/cloud-services/
+[sla-functions]: https://azure.microsoft.com/support/legal/sla/functions/
+[sla-sf]: https://azure.microsoft.com/support/legal/sla/service-fabric/
+[sla-vm]: https://azure.microsoft.com/support/legal/sla/virtual-machines/
