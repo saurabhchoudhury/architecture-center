@@ -73,7 +73,7 @@ Do not allow direct RDP or SSH access to VMs that are running application code. 
 
 - For high availability, place two or more NVAs in an availability set, with an external load balancer to distribute Internet requests across the instances. For more information, see [Deploy highly available network virtual appliances][ha-nva].
 
-- You can extend the Azure virtual network to your on-premises network using a site-to-site virtual private network (VPN) or Azure Expressroute. For more information, see [Hybrid network][hybrid-network].
+- You can extend the Azure virtual network to your on-premises network using a site-to-site virtual private network (VPN) or Azure ExpressRoute. For more information, see [Hybrid network][hybrid-network].
 
 - If your organization uses Active Directory to manage identity, you may want to extend your Active Directory environment to the Azure VNet. For more information, see [Identity management][identity].
 

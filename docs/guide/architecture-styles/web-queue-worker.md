@@ -42,7 +42,7 @@ Consider this architectural style for:
 
 ## Web-queue-worker on Azure App Service
 
-This section describes a recommended web-queue-worker architecture that uses Azure App Service.
+This section describes a recommended web-queue-worker architecture that uses Azure App Service. For more details 
 
 ![](./images/web-queue-worker-physical.png)
 
