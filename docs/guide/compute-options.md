@@ -9,7 +9,7 @@
 | Minimum number of nodes | 1 <a href="#note2">[2]</a>  | 1 | 5 <a href="#note3">[3]</a> | No dedicated nodes <a href="#note1">[1]</a> | 3 | 2 | 1 <a href="#note4">[4]</a> |
 | State management | Stateless or Stateful | Stateless | Stateless or stateful | Stateless | Stateless or Stateful | Stateless | Stateless |
 | Web hosting | Agnostic | Built in | Self-host, IIS in containers | Not applicable | Agnostic | Built-in (IIS) | No |
-| OS | Windows, Linux | Windows, Linux  | Windows, Linux | Windows, Linux | Windows,  Linux | Windows | Windows, Linux |
+| OS | Windows, Linux | Windows, Linux (preview)  | Windows, Linux  (preview) | Not applicable | Windows,  Linux | Windows | Windows, Linux |
 | Dedicated network | Supported | Supported <a href="#note5">[5]</a> | Supported | Not supported | Supported | Supported <a href="#note6">[6]</a> | Supported |
 | Hybrid connectivity | Supported | Supported <a href="#note1">[7]</a>  | Supported | Not supported | Supported | Supported <a href="#note8">[8]</a> | Supported |
 
@@ -30,7 +30,7 @@ Notes
 |----------|-----------------|-------------|----------------|-----------------|-------------------------|----------------|-------------|
 | Local debugging | Agnostic | IIS Express, others <a href="#note1b">[1]</a> | Local node cluster | Azure Functions CLI | Local container runtime | Local emulator | Not supported |
 | Programming model | Agnostic | Web application, WebJobs for background tasks | Guest executable, Service model, Actor model, Containers | Functions with triggers | Agnostic | Web role, worker role | Command line application |
-| Application update | No built-in support | Deployment slots | Rolling upgrade (per service) | No built-in support | Depends on orchestrator. Most support rolling updates | VIP swap or rolling update | N/A |
+| Application update | No built-in support | Deployment slots | Rolling upgrade (per service) | No built-in support | Depends on orchestrator. Most support rolling updates | VIP swap or rolling update | Not applicable |
 
 Notes
 
