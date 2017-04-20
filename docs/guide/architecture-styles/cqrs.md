@@ -14,7 +14,7 @@ CQRS addresses these problems by separating reads and writes into separate model
 
 - Queries never modify the database. A query returns a DTO that does not encapsulate any domain knowledge.
 
-For greater isolation, you can physically separate the read data from the write data. In that case, the read database can use its own data schema that is optimized for queries. For example, it can store a [materialized view][materialized-view] of the data, in order to avoid complex joins or complex O/RM mappings. It might even use a different type of data store. For example, the write database might be relational, while the read database is a key-value store.
+For greater isolation, you can physically separate the read data from the write data. In that case, the read database can use its own data schema that is optimized for queries. For example, it can store a [materialized view][materialized-view] of the data, in order to avoid complex joins or complex O/RM mappings. It might even use a different type of data store. For example, the write database might be relational, while the read database is a document database.
 
 If separate read and write databases are used, they must be kept in sync. Typically this is accomplished by  having the write model publish an event whenever it updates the database. Updating the database and publishing the event must occur in a single transaction. 
 

@@ -2,6 +2,8 @@
 
 The term Big Compute describes large scale workloads that require a large number of cores, often numbering in the hundreds or thousands. Scenarios include image rendering, fluid dynamics, financial risk modeling, oil exploration, drug design, and engineering stress analysis, among others.
 
+![](./images/big-compute-logical.png)
+
 Here are some typical characteristics of Big Compute applications:
 
 - The work can be split into discrete tasks, which can be run across many cores simultaneously.

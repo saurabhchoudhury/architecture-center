@@ -42,7 +42,7 @@ N-tier architectures are very common in traditional on-premises applications, so
 - It's easy to end up with a middle tier that just does CRUD operations on the database, adding extra latency without doing any useful work. 
 - Monolithic design prevents independent deployment of features.
 - Managing an IaaS application is more work than a pure PaaS application that uses only managed services. 
-- It can be difficult to manage the versioning of the code that is deployed on the VMs, making it challenging to update the application.
+- It can be difficult to manage network security in a large system.
 
 ## N-tier architecture on virtual machines
 

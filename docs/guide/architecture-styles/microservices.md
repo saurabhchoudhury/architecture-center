@@ -49,11 +49,11 @@ Consider this architectural style for:
 
 ## Benefits 
 
-- **Small, focused teams.** Teams can focus on one service. The smaller scope of each service makes the code base easier to understand and reason about. It's easier to ramp up.
-
 - **Independent deployments**. You can update a service without re-deploying the entire application, and roll back or roll forward an update if something goes wrong. Bug fixes and feature releases are more manageable and less risky.
 
 - **Independent development**. A single development team can build, test, and deploy a service. The result is continuous innovation and a faster release cadence. 
+
+- **Small, focused teams.** Teams can focus on one service. The smaller scope of each service makes the code base easier to understand and reason about. It's easier to ramp up.
 
 - **Fault isolation**. If a service goes down, it won't take out the entire application. However, that doesn't mean the microservices gives you resiliency for free. You still need to follow resiliency best practices and design patterns.
 
@@ -71,7 +71,7 @@ Consider this architectural style for:
 
 - **Network congestion and latency**. The use of many small, granular services can result in more interservice communication. Also, if the chain of service dependencies gets too long (service A calls B, which calls C...), the additional latency can become a problem. You will need to design APIs carefully. Avoid overly chatty APIs, think about serialization formats, and look for places to use asynchronous communication patterns.
 
-- **Data integity**. With each microservice responsible for its own data persistence, the application does not have a single data schema. As a result, data consistency can be a challenge. Embrace eventual consistency where possible.
+- **Data integity**. With each microservice responsible for its own data persistence. As a result, data consistency can be a challenge. Embrace eventual consistency where possible.
 
 - **Management**. To be successful with microservices requires a mature DevOps culture. Correlated logging across services can be challenging. Typically, logging must correlate multiple service calls for a single user operation.
 
@@ -81,21 +81,27 @@ Consider this architectural style for:
 
 ## Principles
 
-- Use domain-driven design to find natural service boundaries. 
+- Model services around the business domain. 
 
-- Favor small bounded contexts. Don't try to create a single domain model across all microservices. 
+- Data storage should be private to the service that owns the data. 
 
-- Use context mapping to clarify the relationship between domain models. 
+- Use the best storage for each service and data type.
+
+- Services communicate through well-designed APIs. Avoid leaking implementation details. APIs should model the domain, not the internal implementation of the service.
 
 - Avoid coupling between services. Causes of coupling include shared database schemas and rigid communication protocols.
 
-- Avoid the Enterprise Service Bus pattern that builds domain logic into the messaging infrastructure.
+- Offload cross-cutting concerns, such as authentication and SSL termination, to the gateway.
+
+- Keep domain knowledge out of the gateway. The gateway should handle and route client requests without any knowledge of the business rules or domain logic. Otherwise, the gateway becomes a dependency and can cause coupling between services.
 
 - Services should have loose coupling and high functional cohesion. Functions that are likely to change together should be packaged and deployed together. If they reside in separate services, those services end up being tightly coupled, because a change in one service will require updating the other service. Overly chatty communication between two services may be a symptom of tight coupling and low cohesion. 
 
+
+
 ## Microservices using Azure Container Service 
 
-You can use Azure Container Service to configure and provision a Docker cluster. Azure Container Services supports several popular container orchestrators, including DC/OS, Docker Swarm, and Kubernetes.
+You can use Azure Container Service to configure and provision a Docker cluster. Azure Container Services supports several popular container orchestrators, including Kubernetes, DC/OS, and Docker Swarm.
 
 ![](./images/microservices-acs.png)
  

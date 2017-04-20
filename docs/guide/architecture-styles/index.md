@@ -77,11 +77,11 @@ The following table summarizes how each style manages dependencies, and the type
 
 | Architecture style |	Dependency management | Domain type |
 |--------------------|------------------------|-------------|
-| N-Tier | Horizontal layers | Traditional business domain. Frequency of updates is low. |
+| N-Tier | Horizontal tiers divided by subnet | Traditional business domain. Frequency of updates is low. |
 | Web-Queue-Worker | Front and backend jobs, decoupled by async messaging. | Relatively simple domain with some resource intensive tasks. |
-| Microservices	| Vertical (functional) decoupling. | Complicated domain. Frequent updates. |
+| Microservices	| Vertically (functionally) decomposed services that call each other through APIs. | Complicated domain. Frequent updates. |
 | CQRS | Read/write segregation. Schema and scale are optimized separately. | Collaborative domain where lots of users access the same data. |
-| Event-driven architecture. | Producer/consumer. Independent view per sub-system. | IoT |
+| Event-driven architecture. | Producer/consumer. Independent view per sub-system. | IoT and real-time systems |
 | Big data | Divide a huge dataset into small chunks. Parallel processing on local datasets. | Batch and real-time data analysis. Predictive analysis using ML. |
 | Big compute| Data allocation to thousands of cores. | Compute intensive domains such as simulation. |
 
