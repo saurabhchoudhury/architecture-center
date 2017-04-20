@@ -11,7 +11,9 @@
 ### [Big Compute](./architecture-styles/big-compute.md)
 ### [Big Data](./architecture-styles/big-data.md)
 
-## Choosing technologies
+## [Technology choices](./choose-technology.md)
+### [Compute options](./compute-options.md)
+### Storage options
 
 ## [Design principles](./design-principles/index.md)
 ### [Use managed services](./design-principles/managed-services.md)

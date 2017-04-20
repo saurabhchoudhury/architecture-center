@@ -62,7 +62,6 @@ Notes
 |----------|-----------------|-------------|----------------|-----------------|-------------------------|----------------|-------------|
 | SSL | Configured in VM | Supported | Supported  | Supported | Configured in VM | Supported | Supported |
 | RBAC | Supported | Supported | Supported | Supported | Supported | Not supported | Supported |
-| Security Center | Supported | Not supported  | Not supported | Not supported  | Not supported  | Supported | Not supported  |
 
 ## Other
 
