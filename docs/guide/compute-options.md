@@ -41,7 +41,7 @@ Notes
 
 | Criteria | Virtual Machine | App Service | Service Fabric | Azure Functions | Azure Container Service | Cloud Services | Azure Batch |
 |----------|-----------------|-------------|----------------|-----------------|-------------------------|----------------|-------------|
-| Auto-scaling | VM scale sets | Built-in service | VM Scale Sets, Built-in for application scaling. | Built-in service | Not supported | Built-in service | N/A |
+| Auto-scaling | VM scale sets | Built-in service | VM Scale Sets | Built-in service | Not supported | Built-in service | N/A |
 | Load balancer | Azure Load Balancer | Integrated | Azure Load Balancer | Integrated | Azure Load Balancer | Integrated | Azure Load Balancer |
 | Scale limit | Platform image: 1000 nodes per VMSS, Custom image: 100 nodes per VMSS | 20 instances, 50 with App Service Environment | 100 nodes per VMSS | Infinite <a href="#note1c">[1]</a> | 100 | No defined limit, 200 maximum recommended | 20 core limit by default. Contact customer service for increase. |
 
@@ -68,6 +68,8 @@ Notes
 | Criteria | Virtual Machine | App Service | Service Fabric | Azure Functions | Azure Container Service | Cloud Services | Azure Batch |
 |----------|-----------------|-------------|----------------|-----------------|-------------------------|----------------|-------------|
 | Suitable architecture styles | Lift-and-shift, N-Tier | Web-Queue-Worker | Microservices, Event driven architecture (EDA) | Microservices, EDA | Microservices, EDA | Web-Queue-Worker | Big Compute |
+
+
 
 
 [function-plans]: /azure/azure-functions/functions-scale

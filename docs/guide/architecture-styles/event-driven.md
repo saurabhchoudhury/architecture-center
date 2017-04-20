@@ -42,9 +42,7 @@ In the logical diagram above, each type of consumer is shown as a single box. In
 ## Challenges
 
 - Guaranteed delivery. In some systems, especially in IoT scenarios, it's crucial to guarantee that events are delivered.
-- Processing events in order. 
-- Exactly-once processing.
-
+- Processing events in order or exactly once. Each consumer typically runs in multiple instances, for resiliency and scalability. This can create a challenge if the events must be processed in order, or if the processing logic is not idempotent.
 
 ## IoT architecture
 

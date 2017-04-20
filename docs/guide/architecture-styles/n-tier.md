@@ -60,6 +60,10 @@ Use network security groups (NSGs) to restrict access to each tier. For example,
 
 Do not allow direct RDP or SSH access to VMs that are running application code. Instead, operators should log into a jumpbox, also called a bastion host. This is a  VM on the network that administrators use to connect to the other VMs. The jumpbox has an NSG that allows RDP or SSH only from whitelisted public IP addresses.
 
+For more details and a deployable Resource Manager template, see:
+
+- [Run Windows VMs for an N-tier application][n-tier-windows]
+- [Run Linux VMs for an N-tier application][n-tier-linux]
 
 ### Additional considerations
 
@@ -83,5 +87,7 @@ Do not allow direct RDP or SSH access to VMs that are running application code. 
 [ha-nva]: ../../reference-architectures/dmz/nva-ha.md
 [hybrid-network]: ../../reference-architectures/hybrid-networking/index.md
 [identity]: ../../reference-architectures/identity/index.md
-[multiregion-windows]: ../../reference-architectures/virtual-machines-windows/multi-region-application.md
 [multiregion-linux]: ../../reference-architectures/virtual-machines-linux/multi-region-application.md
+[multiregion-windows]: ../../reference-architectures/virtual-machines-windows/multi-region-application.md
+[n-tier-linux]: ../../reference-architectures/virtual-machines-linux/n-tier
+[n-tier-windows]: ../../reference-architectures/virtual-machines-windows/n-tier

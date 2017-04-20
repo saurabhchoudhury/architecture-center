@@ -22,20 +22,18 @@ Some implementations of CQRS use the [Event Sourcing pattern][event-sourcing]. W
 
 ![](./images/cqrs-events.png)
 
-
-
 ## When to use this architecture
 
 Consider CQRS for collaborative domains where many users access the same data, especially when the read and write workloads are asymmetrical.
 
 Apply CQRS only to those subsystems where there is clear value in separating reads and writes. Otherwise, you are creating additional complexity for no benefit.
 
-
 ## Benefits
 
-- **Simpler models**. Most of the transactional business logic goes into the write model. The read model is relatively simple and lightweight.
+- **Independently scaling**. CQRS allows the read and write workloads to scale independently, and may result in fewer lock contentions.
+- **Optimized data schemas.**  The write read side can use a schema that is optimized for queries, while the write side uses a schema that is optimized for updates.  
 - **Security**. It's easier to ensure that only the right domain entities are performing writes on the data.
-- **Separation of read and write workloads** This allows each workload to be scaled independently, and may result in fewer lock contentions.
+- **Separation of concerns**. Segregating the read and write sides can result in models that are more maintainable and flexible. Most of the complex business logic goes into the write model. The read model can be relatively simple.
 - **Simpler queries**. By storing a materialized view in the read database, the application can avoid complex joins when querying.
 
 ## Challenges

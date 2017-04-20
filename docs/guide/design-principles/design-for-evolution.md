@@ -4,7 +4,7 @@ description: An evolutionary design is key for continuous innovation.
 layout: LandingPage
 ---
 
-# Design for change
+# Design for evolution
 
 ## An evolutionary design is key for continuous innovation
 

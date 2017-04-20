@@ -42,7 +42,7 @@ Consider this architectural style for:
 
 ## Web-queue-worker on Azure App Service
 
-This section describes a recommended web-queue-worker architecture that uses Azure App Service. For more details 
+This section describes a recommended web-queue-worker architecture that uses Azure App Service. 
 
 ![](./images/web-queue-worker-physical.png)
 
@@ -56,6 +56,8 @@ Azure CDN is used to cache static content such as images, CSS, HTML.
 
 For storage, choose the storage technologies that best fit the needs of the application. You might use multiple storage technologies (polyglot persistence). To illustrate this idea, the diagram shows Azure SQL Database and DocumentDB.  
 
+For more details, see [Managed web application reference architecture][scalable-web-app].
+
 
 ### Additional considerations
 
@@ -67,5 +69,8 @@ For storage, choose the storage technologies that best fit the needs of the appl
 
 - Use separate App Service plans for production and testing. Otherwise, if you use the same plan for production and testing, it means your tests are running on your production VMs.
 
-- Use deployment slots to manage deployments. This gives you the ability to deploy an upgrade and then swap over to the upgraded version. It also lets you swap back to, if there was a problem 
+- Use deployment slots to manage deployments. This lets you to deploy an udpated version to a staging slot, then swap over to the new version. It also lets you swap back to the previous version, if there was a problem with the update.
 
+<!-- links -->
+
+[scalable-web-app]: ../../reference-architectures/managed-web-app/scalable-web-app

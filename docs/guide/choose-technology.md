@@ -24,21 +24,16 @@ When selecting a compute option, here are some factors to consider:
 - DevOps. Is there built-in support for application upgrades? What is the deployment model?
 - Scalability. How does the service handle adding or removing instances? Can it auto-scale based on load and other metrics? 
 - Availability. What is the service SLA? 
-- Cost. In addition to the cost of the service itself, consider the operations cost for managing a solution built on that service. For example, IaaS solutions might have a higher operations cost.
+- Cost. For pricing information, see [Azure pricing][pricing]. But in addition to the cost of the service itself, consider the operations cost for managing a solution built on that service. For example, IaaS solutions might have a higher operations cost.
 - What are the overall limitations of each service? 
 - What kind of application architectures are appropriate for this service? 
 
-Each compute options aligns well to certain architecture styles, so the architecture style that you choose will guide your choice of compute options.
-
-| Archtecture style | Consider... |
-|-------------------|-------------|
-| N-tier | Azure VMs (IaaS) |
-| Web-queue-worker | App Service |
-| Event-driven architecture | Azure functions |
-| Microservices | Service Fabric or Azure Container Service |
-| Big Compute | Azure Batch |
-| Big Data | HDInsight |
 
 ## Choosing storage
 
 tbd
+
+
+<!-- links -->
+
+[pricing]: https://azure.microsoft.com/pricing/

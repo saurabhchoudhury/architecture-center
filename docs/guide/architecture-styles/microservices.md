@@ -55,7 +55,7 @@ Consider this architectural style for:
 
 - **Small, focused teams.** Teams can focus on one service. The smaller scope of each service makes the code base easier to understand and reason about. It's easier to ramp up.
 
-- **Fault isolation**. If a service goes down, it won't take out the entire application. However, that doesn't mean the microservices gives you resiliency for free. You still need to follow resiliency best practices and design patterns.
+- **Fault isolation**. If a service goes down, it won't take out the entire application. However, that doesn't mean the microservices gives you resiliency for free. You still need to follow resiliency best practices and design patterns. See [Designing resilient applications for Azure][resiliency-overview].
 
 - **Mixed technology stacks**. Teams can pick the technology that best fits their service. 
 
@@ -97,8 +97,6 @@ Consider this architectural style for:
 
 - Services should have loose coupling and high functional cohesion. Functions that are likely to change together should be packaged and deployed together. If they reside in separate services, those services end up being tightly coupled, because a change in one service will require updating the other service. Overly chatty communication between two services may be a symptom of tight coupling and low cohesion. 
 
-
-
 ## Microservices using Azure Container Service 
 
 You can use Azure Container Service to configure and provision a Docker cluster. Azure Container Services supports several popular container orchestrators, including Kubernetes, DC/OS, and Docker Swarm.
@@ -134,7 +132,9 @@ The Service Fabric runtime performs cluster management, including service placem
 Services communicate with each other using the reverse proxy that is built into Service Fabric. Service Fabric provides a discovery service that can resolve the endpoint for a named service.
 
 
+<!-- links -->
 
+[resiliency-overview]: ../../resiliency/index.md
 
 
 
