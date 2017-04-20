@@ -67,10 +67,17 @@ Notes
 
 | Criteria | Virtual Machine | App Service | Service Fabric | Azure Functions | Azure Container Service | Cloud Services | Azure Batch |
 |----------|-----------------|-------------|----------------|-----------------|-------------------------|----------------|-------------|
+| Cost | [Windows][cost-windows-vm], [Linux][cost-linux-vm] | [App Service pricing][cost-app-service] | [Service Fabric pricing][cost-service-fabric] | [Azure Functions pricing][cost-functions] | [Azure Container Service pricing][cost-acs] | [Cloud Services pricing][cost-cloud-services] | [Azure Batch pricing][cost-batch]
 | Suitable architecture styles | Lift-and-shift, N-Tier | Web-Queue-Worker | Microservices, Event driven architecture (EDA) | Microservices, EDA | Microservices, EDA | Web-Queue-Worker | Big Compute |
 
-
-
+[cost-linux-vm]: https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/
+[cost-windows-vm]: https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/
+[cost-app-service]: https://azure.microsoft.com/en-us/pricing/details/app-service/
+[cost-service-fabric]: https://azure.microsoft.com/en-us/pricing/details/service-fabric/
+[cost-functions]: https://azure.microsoft.com/en-us/pricing/details/functions/
+[cost-acs]: https://azure.microsoft.com/en-us/pricing/details/container-service/
+[cost-cloud-services]: https://azure.microsoft.com/en-us/pricing/details/cloud-services/
+[cost-batch]: https://azure.microsoft.com/en-us/pricing/details/batch/
 
 [function-plans]: /azure/azure-functions/functions-scale
 [sla-acs]: https://azure.microsoft.com/support/legal/sla/container-service/
