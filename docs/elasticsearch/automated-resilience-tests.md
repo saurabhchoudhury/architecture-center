@@ -6,9 +6,8 @@ ms.service: guidance
 ms.topic: article
 ms.date: 09/22/2016
 ms.author: pnp
-
 pnp.series.title: Elasticsearch on Azure
-pnp.series.prev: deploy-jmeter-junit-sampler
+pnp.series.prev: jmeter-junit-sampler
 pnp.series.next: automated-performance-tests
 ---
 # Run automated resiliency tests

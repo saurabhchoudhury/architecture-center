@@ -6,7 +6,6 @@ ms.service: guidance
 ms.topic: article
 ms.date: 05/23/2016
 ms.author: pnp
-
 pnp.series.title: Manage Identity in Multitenant Applications
 pnp.series.prev: claims
 pnp.series.next: app-roles

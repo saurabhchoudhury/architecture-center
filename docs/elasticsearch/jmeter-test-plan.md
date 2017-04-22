@@ -7,10 +7,9 @@ ms.topic: article
 ms.date: 09/22/2016
 ms.author: pnp
 ms.custom: elasticsearch
-
 pnp.series.title: Elasticsearch on Azure
 pnp.series.prev: performance-testing-environment
-pnp.series.next: deploy-jmeter-junit-sampler
+pnp.series.next: jmeter-junit-sampler
 ---
 # Implement a JMeter test plan 
 [!INCLUDE [header](../_includes/header.md)]

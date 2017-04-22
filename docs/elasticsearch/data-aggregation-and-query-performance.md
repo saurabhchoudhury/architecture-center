@@ -8,7 +8,6 @@ ms.service: guidance
 ms.topic: article
 ms.date: 09/22/2016
 ms.author: pnp
-
 pnp.series.title: Elasticsearch on Azure
 pnp.series.prev: data-ingestion-performance
 pnp.series.next: resilience-and-recovery

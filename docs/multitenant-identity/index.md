@@ -7,7 +7,6 @@ author: MikeWasson
 ms.service: guidance
 ms.topic: article
 ms.date: 06/02/2016
-
 ms.author: pnp
 pnp.series.title: Manage Identity in Multitenant Applications
 pnp.series.next: tailspin

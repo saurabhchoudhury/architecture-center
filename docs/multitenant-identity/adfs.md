@@ -6,9 +6,8 @@ ms.service: guidance
 ms.topic: article
 ms.date: 06/02/2016
 ms.author: pnp
-
 pnp.series.title: Manage Identity in Multitenant Applications
-pnp.series.prev: token-cache
+pnp.series.prev: key-vault
 pnp.series.next: client-assertion
 ---
 # Federate with a customer's AD FS

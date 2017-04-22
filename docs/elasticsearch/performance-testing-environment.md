@@ -9,10 +9,9 @@ ms.topic: article
 ms.date: 09/22/2016
 ms.author: pnp
 ms.custom: elasticsearch
-
 pnp.series.title: Elasticsearch on Azure
 pnp.series.prev: resilience-and-recovery
-pnp.series.next: implement-jmeter-test-plan
+pnp.series.next: jmeter-test-plan
 ---
 # Create a performance testing environment
 [!INCLUDE [header](../_includes/header.md)]

@@ -6,9 +6,8 @@ ms.service: guidance
 ms.topic: article
 ms.date: 05/23/2016
 ms.author: pnp
-
 pnp.series.title: Manage Identity in Multitenant Applications
-pnp.series.prev: adfs
+pnp.series.prev: token-cache
 pnp.series.next: key-vault
 ---
 # Use client assertion to get access tokens from Azure AD

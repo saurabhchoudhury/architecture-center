@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 09/22/2016
 ms.author: pnp
 ms.custom: elasticsearch
-
 pnp.series.title: Elasticsearch on Azure
 pnp.series.next: data-ingestion-performance
 ---

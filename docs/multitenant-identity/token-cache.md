@@ -6,10 +6,9 @@ ms.service: guidance
 ms.topic: article
 ms.date: 02/16/2016
 ms.author: pnp
-
 pnp.series.title: Manage Identity in Multitenant Applications
 pnp.series.prev: web-api
-pnp.series.next: adfs
+pnp.series.next: client-assertion
 ---
 # Cache access tokens
 
