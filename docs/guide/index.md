@@ -1,5 +1,6 @@
 ---
 ms.topic: article
+layout: LandingPage
 ---
 
 # Azure Application Architecture Guide
@@ -36,12 +37,15 @@ Immutable infrastructure<br/>
 </tbody>
 </table>
 
-
-**How this guide is structured**. This guide presents a structured approach for designing applications on Azure that are scalable, resilient, and highly available. It is intended for architects and engineers who are designing solutions for Azure. 
+The Azure Application Architecture Guide is designed to help navigate these changes. It presents a structured approach for designing applications on Azure that are scalable, resilient, and highly available. It is based on proven practices that we have learned from customer engagements.
 
 <object data="./images/guide-steps.svg" type="image/svg+xml"></object>
 
-**Architecture styles**. The guide is organized as a series of steps from the architecture design to the implementation. Each step involves decisions, starting with the most fundamental: What kind of architecture are you building? A microservices architecture? A more traditional N-tier application? A Big Data solution? There are benefits and challenges to each. [Learn about architecture styles...][arch-styles].  
+**How this guide is structured**. The guide is organized as a series of steps, from the architecture design to the implementation. 
+
+
+
+**Architecture styles**. Each step involves decisions, starting with the most fundamental: What kind of architecture are you building? A microservices architecture? A more traditional N-tier application? A Big Data solution? There are benefits and challenges to each. [Learn about architecture styles...][arch-styles].  
 
 **Technology choices**. Two technology choices should be decided early on, because they affect the entire architecture. These are the choice of **compute** and **storage** technologies. The term "compute" refers to the hosting model for the computing resources that your applications runs on. Storage includes databases but also storage for message queues, caches, IoT data, unstructured log data, and anything else that an application might persist to storage. 
 
