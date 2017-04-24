@@ -5,46 +5,35 @@
 Scalability is the ability of a system to handle increased load. There are two main ways that an application can scale:
 
 - Scaling up, also called vertical scaling, means increasing the capacity of a resource. For example, using a larger VM size or a larger database.
-- Scaling out, also called horizontal scaling, means adding new instances ofa resource, whether VMs, message queues, or database replicas. 
+- Scaling out, also called horizontal scaling, means adding new instances of a resource, whether VMs, message queues, or database replicas. 
 
 Horizontal scaling has significant advantages over vertical scaling:
 
 - True cloud scale. Applications can be designed to run on hundreds or even thousands of nodes, reaching scales that are not possible on a single node.
 - Horizontal scale is elastic, meaning you can add more instances if load increases, or remove them during quieter periods.
 - Scaling out can be triggered automatically, either on a schedule or in response to changes in load. 
-- Scaling out may be cheaper than scaling up. For example, running several small VMs can cost less than a single large VM. 
+- Scaling out may be cheaper than scaling up. Running several small VMs can cost less than a single large VM. 
 - Horizontal scaling can also improve resiliency, by adding redundancy. If an instance goes down, the application keeps running.
 
 An advantage of vertical scaling is that you can do it without making any changes to the application. But at some point you'll hit a limit, where you can't scale any up any more. At that point, any further scaling must be horizontal. 
 
-Horizontal scale must be designed into the system from the start. For example, you can scale out VMs by placing them behind a load balancer. But then each VM in the pool must be able to handle any client request, so the application must be stateless or store state externally (say, in a distributed cache). Managed PaaS services often have horizontal scaling and auto-scaling built in. The ease of scaling these services is one of the major advantages of using managed services.
+Horizontal scale must be designed into the system from the start. For example, you can scale out VMs by placing them behind a load balancer. But then each VM in the pool must be able to handle any client request, so the application must be stateless or store state externally (say, in a distributed cache). Managed PaaS services often have horizontal scaling and auto-scaling built in. The ease of scaling these services is a  major advantages of using managed services.
 
 Just adding more instances doesn't mean an application will scale, however. It may simply push the bottleneck somewhere else. For example, if you scale a web front-end to handle more client requests, that might trigger lock contentions in the back-end database. You would then need to consider additional measures, such as optimistic concurrency or data partitioning, to enable more throughput to the database.
 
 Always conduct performance and load testing to find these potential bottlenecks. The stateful parts of a system, such as databases, are the most common cause of bottlenecks, and require careful design in order to scale horizontally. Resolving one bottleneck may reveal other bottlenecks elsewhere.
 
-### Designing for scalability
+### Scalability guidance
 
-Start by understanding these high-level design principles:
-
-- [Minimize coordinaton][coordination]
-- [Design for scale out][scale-out]
-- [Partition around limits][partition]
-
-Next, look at these design patterns and anti-patterns:
 
 - [Design patterns for scalability and performance][scalability-patterns]
 - Performance anti-patterns
-
-The following articles describe best practices that can improve scalability:
-
-- [Autoscaling][autoscale]
-- [Background jobs][background-jobs]
-- [Caching][caching]
-- [CDN][cdn]
-- [Data partitioning][data-partitioning]
-
-Use the [Scalability checklist][scalability-checklist] when reviewing the architecture, design, and implementation.
+- [Best practices: Autoscaling][autoscale]
+- [Best practices: Background jobs][background-jobs]
+- [Best practices: Caching][caching]
+- [Best practices: CDN][cdn]
+- [Best practices: Data partitioning][data-partitioning]
+- [Scalability checklist][scalability-checklist] 
 
 ## Availability
 
@@ -66,49 +55,32 @@ Notice that 99% uptime could translate to an almost 2-hour service outage per we
 
 In Azure, the Service Level Agreement (SLA) describes Microsoft's commitments for uptime and connectivity. If the SLA for a particular service is 99.9%, it means you should expect the service to be available 99.9% of the time.
 
-### Designing for availability
+### Availability guidance
 
-Start by understanding these high-level design principles:
-
-- [Design for self healing][self-healing]
-- [Make all things redundant][redundant]
-- [Minimize coordination][coordination]
-- [Partition around limits][partition]
-- [Design for the needs of the business][needs-of-business]
-
-Next, look at these design patterns:
-
-- [Design patterns for availability][availability-patterns]
-
-The following articles describe best practices that can improve availability:
-
-- [Autoscaling][autoscale]
-- [Background jobs][background-jobs]
-
-Use the [Availability checklist][availability-checklist] when reviewing the architecture, design, and implementation.
+- [Design patterns: Availability][availability-patterns]
+- [Best practices: Autoscaling][autoscale]
+- [Best practices: Background jobs][background-jobs]
+- [Availability checklist][availability-checklist] 
 
 ## Resiliency
 
 Resiliency is the ability of the system to recover from failures and continue to function. The goal of resiliency is to return the application to a fully functioning state after a failure occurs.
 
-In traditional application development, there has been a focus on reducing mean time between failures (MTBF). Effort was spent trying to prevent the system from failuring.  In cloud computing, a different mindset is required. 
+In traditional application development, there has been a focus on reducing mean time between failures (MTBF). Effort was spent trying to prevent the system from failing. In cloud computing, a different mindset is required. 
 
 - Distributed systems are complex, and a failure at one point can potentially cascade throughout the system.
-- Costs for cloud environments are kept low through the use of commodity hardware, so occasional hardware failures must be expected. 
-- The network may have transient failures. 
-- An application depend on external services, which may become temporarily unavailable or throttle high-volume users. 
+- Costs for cloud environments are kept low through the use of commodity hardware, so occasional hardware or network failures must be expected. 
+- Applications depend on external services, which may become temporarily unavailable or throttle high-volume users. 
 
 Moreover, in an online world, users expect an application to be available 24/7 without ever going offline. All of these factors mean that cloud applications must be designed to expect occasional failures and recover from them.  
 
 When designing an application to be resilient, you must understand your availability requirements. How much downtime is acceptable? This is partly a function of cost. How much will potential downtime cost your business? How much should you invest in making the application highly available?
 
-Resiliency can be applied at all levels of the architecture. Some mitigations can be describes as more tactical in nature &mdash; for example, retrying a remote call after a transient network failure. Other mitigations are more strategic, such as failing over the entire application to a secondary region. 
-
-Tactical mitigations can make a big difference. It's rare for an entire region to experience a disruption. Transient issues such as network congestion are more common &mdash; target these first. Having the right monitoring and diagnostics is also important, both to detect failures when they happen, and to find the root causes.
+Resiliency can be applied at all levels of the architecture. Some mitigations can be describes as more tactical in nature &mdash; for example, retrying a remote call after a transient network failure. Other mitigations are more strategic, such as failing over the entire application to a secondary region. Tactical mitigations can make a big difference. It's rare for an entire region to experience a disruption. Transient issues such as network congestion are more common &mdash; target these first. Having the right monitoring and diagnostics is also important, both to detect failures when they happen, and to find the root causes.
 
 ### Implementing resiliency
 
-Resiliency guicance - provides a structured approach to planning and implementing resiliency
+Resiliency guidance - provides a structured approach to planning and implementing resiliency
 Design principles:
 - Design for self healing
 - Make all things redundant
