@@ -4,8 +4,8 @@
 
 Scalability is the ability of a system to handle increased load. There are two main ways that an application can scale:
 
-- Scaling up, also called vertical scaling, means increasing the resources within an instance. For example, using a larger VM size or a larger database.
-- Scaling out, also called horizontal scaling, means adding new instances of something, whether VMs, message queues, or database replicas. 
+- Scaling up, also called vertical scaling, means increasing the capacity of a resource. For example, using a larger VM size or a larger database.
+- Scaling out, also called horizontal scaling, means adding new instances ofa resource, whether VMs, message queues, or database replicas. 
 
 Horizontal scaling has significant advantages over vertical scaling:
 
@@ -17,15 +17,11 @@ Horizontal scaling has significant advantages over vertical scaling:
 
 An advantage of vertical scaling is that you can do it without making any changes to the application. But at some point you'll hit a limit, where you can't scale any up any more. At that point, any further scaling must be horizontal. 
 
-Horizontal scale must be designed into the system from the start. For example, you can scale out VMs by placing them behind a load balancer. But then each VM in the pool must be able to handle any client request, so the application must be stateless or store state externally (say, in a distributed cache). 
+Horizontal scale must be designed into the system from the start. For example, you can scale out VMs by placing them behind a load balancer. But then each VM in the pool must be able to handle any client request, so the application must be stateless or store state externally (say, in a distributed cache). Managed PaaS services often have horizontal scaling and auto-scaling built in. The ease of scaling these services is one of the major advantages of using managed services.
 
-Managed PaaS services often have horizontal scaling and auto-scaling built in. The ease of scaling these services is one of the major advantages of using managed services.
-
-Just adding more instances doesn't mean an application will scale, however. It may simply push the bottleneck somewhere else. For example, if you scale out a web front-and to handle more client requests, that might trigger lock contentions in the database on the back end. If so, you would need to consider additional measures, such as optimistic concurrency or data partitioning, to enable more throughput to the database.
+Just adding more instances doesn't mean an application will scale, however. It may simply push the bottleneck somewhere else. For example, if you scale a web front-end to handle more client requests, that might trigger lock contentions in the back-end database. You would then need to consider additional measures, such as optimistic concurrency or data partitioning, to enable more throughput to the database.
 
 Always conduct performance and load testing to find these potential bottlenecks. The stateful parts of a system, such as databases, are the most common cause of bottlenecks, and require careful design in order to scale horizontally. Resolving one bottleneck may reveal other bottlenecks elsewhere.
-
-A single monolithic application cannot scale as well as an application that is decomposed into microservices that each have different scalability characteristics. Offloading resource intensive tasks to background jobs can also improve scalability.
 
 ### Designing for scalability
 
@@ -37,7 +33,7 @@ Start by understanding these high-level design principles:
 
 Next, look at these design patterns and anti-patterns:
 
-- [Design patterns for scalability and performance]
+- [Design patterns for scalability and performance][scalability-patterns]
 - Performance anti-patterns
 
 The following articles describe best practices that can improve scalability:
@@ -56,7 +52,7 @@ Availability is the proportion of time that the system is functional and working
 
 A cloud application should have a service level objective (SLO) that clearly defines the expected availability, and how the availability is measured. When defining availability, look at the critical path. If the web front-end is handling client requests, but every transaction fails because it can't connect to the database, the application is not available to users. 
 
-Availability is ofen described in terms of "9s" &emdash; for example, "four 9s" means 99.99% uptime. The following table shows the potential cumulative downtime at different availability levels.
+Availability is ofen described in terms of "9s" &mdash; for example, "four 9s" means 99.99% uptime. The following table shows the potential cumulative downtime at different availability levels.
 
 | % Uptime | Downtime per week | Downtime per month | Downtime per year |
 |----------|-------------------|--------------------|-------------------|
@@ -66,42 +62,34 @@ Availability is ofen described in terms of "9s" &emdash; for example, "four 9s" 
 | 99.99% | 1.01 minutes | 4.32 minutes | 52.56 minutes |
 | 99.999% | 6 seconds | 25.9 seconds | 5.26 minutes |
 
-Notice that 99% uptime could translate to an almost 2-hour service outage per week. For many applications, especially consumer-facing applications, that is not an acceptable SLO. On the other hand, five 9's (99.999%) means no more than 5 minutes of downtime in a year. It's challenging enough just detecting an outage that quickly, let alone resolving the issue. To get very high availability (99.99% or higher), you can't rely on manual intervention to recover from failures. The application must be self-diagnosing and self-healing, which is where resiliency becomes crucial.
+Notice that 99% uptime could translate to an almost 2-hour service outage per week. For many applications, especially consumer-facing applications, that is not an acceptable SLO. On the other hand, five 9s (99.999%) means no more than 5 minutes of downtime in a *year*. It's challenging enough just detecting an outage that quickly, let alone resolving the issue. To get very high availability (99.99% or higher), you can't rely on manual intervention to recover from failures. The application must be self-diagnosing and self-healing, which is where resiliency becomes crucial.
 
 In Azure, the Service Level Agreement (SLA) describes Microsoft's commitments for uptime and connectivity. If the SLA for a particular service is 99.9%, it means you should expect the service to be available 99.9% of the time.
-
-DevOps are especially important to achieve high availability.
-
-- Deployments must be reliable and predictable.
-- You must be able upgrade the application without causing downtime. Equally important, you must be able to roll back or roll forward if there is a problem with an upgrade.
-- Robust monitoring and diagnostics are necessary to get insight into the system and know when and where failures occur.
 
 ### Designing for availability
 
 Start by understanding these high-level design principles:
 
-- Design for self healing
-- Make all things redundant
-- Minimize coordination
-- Partition around limits
-- Design for operations
-- Design for the needs of the business
+- [Design for self healing][self-healing]
+- [Make all things redundant][redundant]
+- [Minimize coordination][coordination]
+- [Partition around limits][partition]
+- [Design for the needs of the business][needs-of-business]
 
-Next, look at these design patterns and anti-patterns:
+Next, look at these design patterns:
 
-- Design patterns for availability 
+- [Design patterns for availability][availability-patterns]
 
 The following articles describe best practices that can improve availability:
 
-- Autoscaling
-- Monitoring and diagnostics
-- Transient fault handling
+- [Autoscaling][autoscale]
+- [Background jobs][background-jobs]
 
-Use the Availability checklist when reviewing the architecture, design, and implementation.
+Use the [Availability checklist][availability-checklist] when reviewing the architecture, design, and implementation.
 
 ## Resiliency
 
-Resiliency is the ability of the system to recover from failures and continue to function. 
+Resiliency is the ability of the system to recover from failures and continue to function. The goal of resiliency is to return the application to a fully functioning state after a failure occurs.
 
 In traditional application development, there has been a focus on reducing mean time between failures (MTBF). Effort was spent trying to prevent the system from failuring.  In cloud computing, a different mindset is required. 
 
@@ -110,11 +98,9 @@ In traditional application development, there has been a focus on reducing mean 
 - The network may have transient failures. 
 - An application depend on external services, which may become temporarily unavailable or throttle high-volume users. 
 
-Moreover, in an online world, users expect an application to be available 24/7 without ever going offline. 
+Moreover, in an online world, users expect an application to be available 24/7 without ever going offline. All of these factors mean that cloud applications must be designed to expect occasional failures and recover from them.  
 
-All of these factors mean that cloud applications must be designed to expect occasional failures and recover from them.  Resiliency is about responding to failures in a way that avoids downtime or data loss. The goal of resiliency is to return the application to a fully functioning state after a failure occurs.
-
-When you design an application to be resilient, you have to understand your availability requirements. How much downtime is acceptable? This is partly a function of cost. How much will potential downtime cost your business? How much should you invest in making the application highly available?
+When designing an application to be resilient, you must understand your availability requirements. How much downtime is acceptable? This is partly a function of cost. How much will potential downtime cost your business? How much should you invest in making the application highly available?
 
 Resiliency can be applied at all levels of the architecture. Some mitigations can be describes as more tactical in nature &mdash; for example, retrying a remote call after a transient network failure. Other mitigations are more strategic, such as failing over the entire application to a secondary region. 
 
@@ -126,13 +112,18 @@ Resiliency guicance - provides a structured approach to planning and implementin
 Design principles:
 - Design for self healing
 - Make all things redundant
+- Design for operations
+- Build for the needs of the business
+
 Design patterns
+
 Best practices
 - Transient fault handling
 - Retry guidance
+
 Resiliency checklist
 
-Manageability / DevOps
+## Manageability / DevOps
 
 
 Design for operations
@@ -146,11 +137,16 @@ DevOps Checklist
 
 <!-- principles -->
 [coordination]: ./design-principles/minimize-coordination.md
-[scale-out]: ./design-principles/scale-out.md
+[needs-of-business]: ./design-principles/build-for-business.md
 [partition]: ./design-principles/partition.md
+[redundant]: ./design-principles/redundancy.md
+[scale-out]: ./design-principles/scale-out.md
+[self-healing]: ./design-principles/self-healing.md
+
 
 <!-- patterns -->
 [scalability-patterns]: ../patterns/category/performance-scalability.md
+[availability-patterns]: ../patterns/category/availability.md
 
 <!-- practices -->
 [autoscale]: ../best-practices/auto-scaling
@@ -160,4 +156,5 @@ DevOps Checklist
 [data-partitioning]: ../best-practices/data-partitioning.md
 
 <!-- checklist -->
+[availability-checklist]: ../checklist/availability.md
 [scalability-checklist]: ../checklist/scalability.md
