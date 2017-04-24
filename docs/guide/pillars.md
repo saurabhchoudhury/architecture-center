@@ -57,7 +57,7 @@ In Azure, the Service Level Agreement (SLA) describes Microsoft's commitments fo
 
 ### Availability guidance
 
-- [Design patterns: Availability][availability-patterns]
+- [Design patterns for availability][availability-patterns]
 - [Best practices: Autoscaling][autoscale]
 - [Best practices: Background jobs][background-jobs]
 - [Availability checklist][availability-checklist] 
@@ -66,13 +66,14 @@ In Azure, the Service Level Agreement (SLA) describes Microsoft's commitments fo
 
 Resiliency is the ability of the system to recover from failures and continue to function. The goal of resiliency is to return the application to a fully functioning state after a failure occurs.
 
-In traditional application development, there has been a focus on reducing mean time between failures (MTBF). Effort was spent trying to prevent the system from failing. In cloud computing, a different mindset is required. 
+In traditional application development, there has been a focus on reducing mean time between failures (MTBF). Effort was spent trying to prevent the system from failing. In cloud computing, a different mindset is required, due to several factors:
 
 - Distributed systems are complex, and a failure at one point can potentially cascade throughout the system.
 - Costs for cloud environments are kept low through the use of commodity hardware, so occasional hardware or network failures must be expected. 
 - Applications depend on external services, which may become temporarily unavailable or throttle high-volume users. 
+- Today's users expect an application to be available 24/7 without ever going offline.
 
-Moreover, in an online world, users expect an application to be available 24/7 without ever going offline. All of these factors mean that cloud applications must be designed to expect occasional failures and recover from them.  
+All of these factors mean that cloud applications must be designed to expect occasional failures and recover from them. 
 
 When designing an application to be resilient, you must understand your availability requirements. How much downtime is acceptable? This is partly a function of cost. How much will potential downtime cost your business? How much should you invest in making the application highly available?
 
@@ -80,40 +81,16 @@ Resiliency can be applied at all levels of the architecture. Some mitigations ca
 
 ### Implementing resiliency
 
-Resiliency guidance - provides a structured approach to planning and implementing resiliency
-Design principles:
-- Design for self healing
-- Make all things redundant
-- Design for operations
-- Build for the needs of the business
-
-Design patterns
-
-Best practices
+- Designing resilient applications for Azure
+- Design patterns for resiliency
 - Transient fault handling
-- Retry guidance
-
-Resiliency checklist
+- Retry guidance for specific services
+- Resiliency checklist
 
 ## Manageability / DevOps
 
 
-Design for operations
-Best practices:
-Monitoring and diagnostics
-Naming conventions
-Management and monitoring patterns
-DevOps Checklist
-
 <!-- links -->
-
-<!-- principles -->
-[coordination]: ./design-principles/minimize-coordination.md
-[needs-of-business]: ./design-principles/build-for-business.md
-[partition]: ./design-principles/partition.md
-[redundant]: ./design-principles/redundancy.md
-[scale-out]: ./design-principles/scale-out.md
-[self-healing]: ./design-principles/self-healing.md
 
 
 <!-- patterns -->
