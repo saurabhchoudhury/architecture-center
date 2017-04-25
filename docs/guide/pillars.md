@@ -70,11 +70,16 @@ In traditional application development, there has been a focus on reducing mean 
 - Applications often depend on external services, which may become temporarily unavailable or throttle high-volume users. 
 - Today's users expect an application to be available 24/7 without ever going offline.
 
-All of these factors mean that cloud applications must be designed to expect occasional failures and recover from them. 
+All of these factors mean that cloud applications must be designed to expect occasional failures and recover from them. Azure has many resiliency features already built into the platform. For example, 
+
+- Azure Storage, SQL Database, and DocumentDB all provide built-in data replication, both within a region and across regions.
+- Azure Managed Disks are automatically placed in different storage scale units, to limit the effects of hardware failures.
+- VMs in an availability set are grouped into fault domains that share a common power source and network switch. This limits the impact of physical hardware failures, network outages, or power interruptions.
+
+That said, you still need to build resiliency your application. Resiliency strategies can be applied at all levels of the architecture. Some mitigations are more tactical in nature &mdash; for example, retrying a remote call after a transient network failure. Other mitigations are more strategic, such as failing over the entire application to a secondary region. Tactical mitigations can make a big difference. While it's rare for an entire region to experience a disruption, transient problems such as network congestion are more common &mdash; so target these first. Having the right monitoring and diagnostics is also important, both to detect failures when they happen, and to find the root causes.
 
 When designing an application to be resilient, you must understand your availability requirements. How much downtime is acceptable? This is partly a function of cost. How much will potential downtime cost your business? How much should you invest in making the application highly available?
 
-Resiliency can be applied at all levels of the architecture. Some mitigations are more tactical in nature &mdash; for example, retrying a remote call after a transient network failure. Other mitigations are more strategic, such as failing over the entire application to a secondary region. Tactical mitigations can make a big difference. While it's rare for an entire region to experience a disruption, transient problems such as network congestion are more common &mdash; so target these first. Having the right monitoring and diagnostics is also important, both to detect failures when they happen, and to find the root causes.
 
 ### Resiliency guidance
 
@@ -84,15 +89,50 @@ Resiliency can be applied at all levels of the architecture. Some mitigations ar
 - Retry guidance for specific services
 - Resiliency checklist
 
-## Manageability / DevOps
+## Management and DevOps
+
+This pillar covers the operations processes that keep an application running in production.
+
+### Deployment
+Deployments must be reliable and predictable. They should be automated to reduce the chance of human error. They should be a fast and routine process, so they don’t slow down the release of new features or bug fixes. Equally important, you must be able to quickly roll back or roll forward if an application update has problems.
+
+### Monitoring and diagnostics
+
+Cloud applications run in a remote datacenter where you do not have full control of the infrastructure or, in some cases, the operating system. In a large application, it’s not practical to log into VMs in order to troubleshoot an issue or sift through log files. With PaaS services, there may not even be a dedicated VM to log into. 
+
+Monitoring and diagnostics give insight into the system, so that you know when and where failures occur. All systems must be observable. Use a common and consistent logging schema that lets you correlate events across systems.
+
+The monitoring and diagnostics process has several distinct phases:
+
+- Instrumentation - Generating the raw data, from  application logs, web server logs, diagnostics built into the Azure platform, and opther sources.
+- Collection and storage - Consolidating the data into one place
+- Analysis and diagnosis - To troubleshoot issues and see the overall health.
+- Visualization and alerts - Using telemetry data to spot trends (e.g. a dashboard) or alert the operations team.
+
+### Disaster recovery
+
+Disaster recovery (DR) is the ability to recover from rare but major incidents. It includes backing up and restoring data, redeploying the application, or failing over to another region. 
+
+Some Azure services have built-in functionality that can help with DR. For example, Azure SQL has point-in-time restore and geo-restore.  Other Azure services for DR include Azure Backup and Azure Site Recovery.
+
+
+### Management and DevOps guidance
+
+- [Design patterns for management and monitoring][management-patterns]
+- [Best practices: Monitoring and diagnostics][monitoring]
+- [DevOps checklist][devops-checklist]
+- [Disaster recovery for applications built on Microsoft Azure][dr-guidance]
 
 
 <!-- links -->
 
+[dr-guidance]: ../resiliency/disaster-recovery-azure-applications.md
 
 <!-- patterns -->
-[scalability-patterns]: ../patterns/category/performance-scalability.md
 [availability-patterns]: ../patterns/category/availability.md
+[management-patterns]: ../patterns/category/management-monitoring.md
+[scalability-patterns]: ../patterns/category/performance-scalability.md
+
 
 <!-- practices -->
 [autoscale]: ../best-practices/auto-scaling
@@ -100,7 +140,9 @@ Resiliency can be applied at all levels of the architecture. Some mitigations ar
 [caching]: ../best-practices/caching.md
 [cdn]: ../best-practices/cdn.md
 [data-partitioning]: ../best-practices/data-partitioning.md
+[monitoring]: ../best-practices/monitoring.md
 
 <!-- checklist -->
 [availability-checklist]: ../checklist/availability.md
+[devops-checklist]: ../checklist/dev-ops.md
 [scalability-checklist]: ../checklist/scalability.md
