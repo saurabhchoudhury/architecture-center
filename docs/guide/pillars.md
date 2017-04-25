@@ -2,7 +2,7 @@
 
 ## Scalability
 
-Scalability is the ability of a system to handle increased load. There are two main ways that an application can scale. Vertical scaling, or scaling *up*, means increasing the capacity of a resource, for example by using a larger VM size. Horizontal scaling, or scaling *out*, means adding new instances of a resource, whether VMs, message queues, or database replicas. 
+Scalability is the ability of a system to handle increased load. There are two main ways that an application can scale. Vertical scaling, or scaling *up*, means increasing the capacity of a resource, for example by using a larger VM size. Horizontal scaling, or scaling *out*, means adding new instances of a resource, such as VMs or database replicas. 
 
 Horizontal scaling has significant advantages over vertical scaling:
 
@@ -14,9 +14,9 @@ Horizontal scaling has significant advantages over vertical scaling:
 
 An advantage of vertical scaling is that you can do it without making any changes to the application. But at some point you'll hit a limit, where you can't scale any up any more. At that point, any further scaling must be horizontal. 
 
-Horizontal scale must be designed into the system from the start. For example, you can scale out VMs by placing them behind a load balancer. But then each VM in the pool must be able to handle any client request, so the application must be stateless or store state externally (say, in a distributed cache). Managed PaaS services often have horizontal scaling and auto-scaling built in. The ease of scaling these services is a major advantage of using managed services.
+Horizontal scale must be designed into the system from the start. For example, you can scale out VMs by placing them behind a load balancer. But then each VM in the pool must be able to handle any client request, so the application must be stateless or store state externally (say, in a distributed cache). Managed PaaS services often have horizontal scaling and auto-scaling built in. The ease of scaling these services is a major advantage.
 
-Just adding more instances doesn't mean an application will scale, however. It may simply push the bottleneck somewhere else. For example, if you scale a web front-end to handle more client requests, that might trigger lock contentions in the back-end database. You would then need to consider additional measures, such as optimistic concurrency or data partitioning, to enable more throughput to the database.
+Just adding more instances doesn't mean an application will scale, however. It might simply push the bottleneck somewhere else. For example, if you scale a web front-end to handle more client requests, that might trigger lock contentions in the database. You would then need to consider additional measures, such as optimistic concurrency or data partitioning, to enable more throughput to the database.
 
 Always conduct performance and load testing to find these potential bottlenecks. The stateful parts of a system, such as databases, are the most common cause of bottlenecks, and require careful design in order to scale horizontally. Resolving one bottleneck may reveal other bottlenecks elsewhere.
 
@@ -25,11 +25,11 @@ Always conduct performance and load testing to find these potential bottlenecks.
 
 - [Design patterns for scalability and performance][scalability-patterns]
 - Performance anti-patterns
-- [Best practices: Autoscaling][autoscale]
-- [Best practices: Background jobs][background-jobs]
-- [Best practices: Caching][caching]
-- [Best practices: CDN][cdn]
-- [Best practices: Data partitioning][data-partitioning]
+- [Best practices for autoscaling][autoscale]
+- [Best practices for background jobs][background-jobs]
+- [Best practices for caching][caching]
+- [Best practices for CDN][cdn]
+- [Best practices for data partitioning][data-partitioning]
 - [Scalability checklist][scalability-checklist] 
 
 ## Availability
@@ -55,8 +55,8 @@ In Azure, the Service Level Agreement (SLA) describes Microsoft's commitments fo
 ### Availability guidance
 
 - [Design patterns for availability][availability-patterns]
-- [Best practices: Autoscaling][autoscale]
-- [Best practices: Background jobs][background-jobs]
+- [Best practices for autoscaling][autoscale]
+- [Best practices for background jobs][background-jobs]
 - [Availability checklist][availability-checklist] 
 
 ## Resiliency
