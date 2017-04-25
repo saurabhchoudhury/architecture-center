@@ -38,7 +38,7 @@ Availability is the proportion of time that the system is functional and working
 
 A cloud application should have a service level objective (SLO) that clearly defines the expected availability, and how the availability is measured. When defining availability, look at the critical path. The web front-end might be able to service all of the client requests, but if every transaction fails because it can't connect to the database, the application is not available to users. 
 
-Availability is ofen described in terms of "9s" &mdash; for example, "four 9s" means 99.99% uptime. The following table shows the potential cumulative downtime at different availability levels.
+Availability is often described in terms of "9s" &mdash; for example, "four 9s" means 99.99% uptime. The following table shows the potential cumulative downtime at different availability levels.
 
 | % Uptime | Downtime per week | Downtime per month | Downtime per year |
 |----------|-------------------|--------------------|-------------------|
@@ -50,7 +50,7 @@ Availability is ofen described in terms of "9s" &mdash; for example, "four 9s" m
 
 Notice that 99% uptime could translate to an almost 2-hour service outage per week. For many applications, especially consumer-facing applications, that is not an acceptable SLO. On the other hand, five 9s (99.999%) means no more than 5 minutes of downtime in a *year*. It's challenging enough just detecting an outage that quickly, let alone resolving the issue. To get very high availability (99.99% or higher), you can't rely on manual intervention to recover from failures. The application must be self-diagnosing and self-healing, which is where resiliency becomes crucial.
 
-In Azure, the Service Level Agreement (SLA) describes Microsoft's commitments for uptime and connectivity. If the SLA for a particular service is 99.9%, it means you should expect the service to be available 99.9% of the time.
+In Azure, the Service Level Agreement (SLA) describes Microsoft's commitments for uptime and connectivity. If the SLA for a particular service is 99.95%, it means you should expect the service to be available 99.95% of the time.
 
 ### Availability guidance
 
