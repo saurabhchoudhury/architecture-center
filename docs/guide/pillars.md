@@ -25,11 +25,7 @@ Always conduct performance and load testing to find these potential bottlenecks.
 
 - [Design patterns for scalability and performance][scalability-patterns]
 - Performance anti-patterns
-- [Best practices for autoscaling][autoscale]
-- [Best practices for background jobs][background-jobs]
-- [Best practices for caching][caching]
-- [Best practices for CDN][cdn]
-- [Best practices for data partitioning][data-partitioning]
+- Best practices: [Autoscaling][autoscale], [Background jobs][background-jobs], [Caching][caching], [CDN][cdn], [Data partitioning][data-partitioning]
 - [Scalability checklist][scalability-checklist] 
 
 ## Availability
@@ -55,8 +51,7 @@ In Azure, the Service Level Agreement (SLA) describes Microsoft's commitments fo
 ### Availability guidance
 
 - [Design patterns for availability][availability-patterns]
-- [Best practices for autoscaling][autoscale]
-- [Best practices for background jobs][background-jobs]
+- Best practices: [Autoscaling][autoscale], [Background jobs][background-jobs]
 - [Availability checklist][availability-checklist] 
 
 ## Resiliency
