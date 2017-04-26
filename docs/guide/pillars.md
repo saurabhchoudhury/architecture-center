@@ -77,6 +77,9 @@ That said, you still need to build resiliency your application. Resiliency strat
 
 When designing an application to be resilient, you must understand your availability requirements. How much downtime is acceptable? This is partly a function of cost. How much will potential downtime cost your business? How much should you invest in making the application highly available?
 
+### Disaster recovery
+
+Disaster recovery (DR) is the ability to recover from rare but major incidents. It includes backing up and restoring data, redeploying the application, or failing over to another region. Some Azure services have built-in functionality that can help with DR. For example, Azure SQL has point-in-time restore and geo-restore.  Other Azure services for DR include Azure Backup and Azure Site Recovery.
 
 ### Resiliency guidance
 
@@ -84,6 +87,7 @@ When designing an application to be resilient, you must understand your availabi
 - [Design patterns for resiliency][resiliency-patterns]
 - Best practices: [Transient fault handling][transient-fault-handling], [Retry guidance for specific services][retry-service-specific]
 - [Resiliency checklist][resiliency-checklist]
+- [Disaster recovery for applications built on Microsoft Azure][dr-guidance]
 
 ## Management and DevOps
 
@@ -105,16 +109,11 @@ The monitoring and diagnostics process has several distinct phases:
 - Analysis and diagnosis. To troubleshoot issues and see the overall health.
 - Visualization and alerts. Using telemetry data to spot trends or alert the operations team.
 
-### Disaster recovery
-
-Disaster recovery (DR) is the ability to recover from rare but major incidents. It includes backing up and restoring data, redeploying the application, or failing over to another region. Some Azure services have built-in functionality that can help with DR. For example, Azure SQL has point-in-time restore and geo-restore.  Other Azure services for DR include Azure Backup and Azure Site Recovery.
-
 ### Management and DevOps guidance
 
 - [Design patterns for management and monitoring][management-patterns]
 - Best practices: [Monitoring and diagnostics][monitoring]
 - [DevOps checklist][devops-checklist]
-- [Disaster recovery for applications built on Microsoft Azure][dr-guidance]
 
 ## Security
 
@@ -128,7 +127,7 @@ Consider using Azure Active Directory (Azure AD) to authenticate and authorize u
 
 If you want to integrate an on-premise Active Directory environment with an Azure network, several approaches are possible, depending on your requirements. For more information, see our [Identity Management][identity-ref-arch] reference architectures.
 
-### Protect your infrastructure 
+### Protecting your infrastructure 
 
 Control access to the Azure resources that you deploy. Every Azure subscription has a [trust relationship][ad-subscriptions] with an Azure AD tenant. 
 Use [Role-Based Access Control][rbac] (RBAC) to grant users within your organization the correct permissions to Azure resources. Grant access by assigning RBAC role to users or groups at a certain scope. The scope can be a subscription, a resource group, or a single resource. [Audit][resource-manager-auditing] all changes to infrastructure. 
