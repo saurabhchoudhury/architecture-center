@@ -1,3 +1,7 @@
+---
+layout: LandingPage
+---
+
 # Compute options
 
 ## Hosting model
