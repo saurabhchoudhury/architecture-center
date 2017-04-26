@@ -1,5 +1,7 @@
 # Pillars of Software Quality 
 
+[intro goes here :-) ]
+
 ## Scalability
 
 Scalability is the ability of a system to handle increased load. There are two main ways that an application can scale. Vertical scaling, or scaling *up*, means increasing the capacity of a resource, for example by using a larger VM size. Horizontal scaling, or scaling *out*, means adding new instances of a resource, such as VMs or database replicas. 
