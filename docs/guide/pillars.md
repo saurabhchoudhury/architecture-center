@@ -104,7 +104,7 @@ Monitoring and diagnostics give insight into the system, so that you know when a
 
 The monitoring and diagnostics process has several distinct phases:
 
-- Instrumentation. Generating the raw data, from  application logs, web server logs, diagnostics built into the Azure platform, and opther sources.
+- Instrumentation. Generating the raw data, from  application logs, web server logs, diagnostics built into the Azure platform, and other sources.
 - Collection and storage. Consolidating the data into one place.
 - Analysis and diagnosis. To troubleshoot issues and see the overall health.
 - Visualization and alerts. Using telemetry data to spot trends or alert the operations team.
@@ -117,15 +117,15 @@ The monitoring and diagnostics process has several distinct phases:
 
 ## Security
 
-You must think about security throughout the entire lifecycle of an application, from design and implementation to deployment and operations. The Azure platform provides protections against a variety of threats, such as network intrustion and DDoS attacks. But you still need to build security into your application and into your DevOps processes.
+You must think about security throughout the entire lifecycle of an application, from design and implementation to deployment and operations. The Azure platform provides protections against a variety of threats, such as network intrusion and DDoS attacks. But you still need to build security into your application and into your DevOps processes.
 
 Here are some broad security areas to consider. 
 
 ### Identity management
 
-Consider using Azure Active Directory (Azure AD) to authenticate and authorize users. Azure AD is a fully managed identity and access management service. You can use it to create domains that exist purely on Azure, or integrate with your on-premise Active Directory identities. Azure AD also integrates with Office365, Dynamics CRM Online, and many third-party SaaS applications. For consumer-facing applications, Azure Active Directory B2C lets users authenticate with their existing social accounts (such as Facebook, Google, or LinkedIn), or create a new user account that is managed by Azure AD.
+Consider using Azure Active Directory (Azure AD) to authenticate and authorize users. Azure AD is a fully managed identity and access management service. You can use it to create domains that exist purely on Azure, or integrate with your on-premises Active Directory identities. Azure AD also integrates with Office365, Dynamics CRM Online, and many third-party SaaS applications. For consumer-facing applications, Azure Active Directory B2C lets users authenticate with their existing social accounts (such as Facebook, Google, or LinkedIn), or create a new user account that is managed by Azure AD.
 
-If you want to integrate an on-premise Active Directory environment with an Azure network, several approaches are possible, depending on your requirements. For more information, see our [Identity Management][identity-ref-arch] reference architectures.
+If you want to integrate an on-premises Active Directory environment with an Azure network, several approaches are possible, depending on your requirements. For more information, see our [Identity Management][identity-ref-arch] reference architectures.
 
 ### Protecting your infrastructure 
 
