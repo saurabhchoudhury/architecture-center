@@ -124,13 +124,11 @@ You need to think about security throughout the entire lifecycle of an applicati
 
 Here are some broad security areas to consider. 
 
-> This is not meant to be comprehensive security guidance. We provide some useful links at the end.
-
 ### Identity management
 
-Consider using Azure Active Directory (Azure AD) to authenticate and authorize users. Azure AD is a fully managed identity and access management service. You can use it to create domains that exist purely on Azure, or integrate with your on-premise Active Directory identities. Azure AD also ntegrates with Office365, Dynamics CRM Online, and many third-party SaaS applications. For consumer-facing applications, Azure Active Directory B2C lets users authenticate with their existing social accounts (such as Facebook, Google, or LinkedIn), or create a new user account that is managed by Azure Active Directory.
+Consider using Azure Active Directory (Azure AD) to authenticate and authorize users. Azure AD is a fully managed identity and access management service. You can use it to create domains that exist purely on Azure, or integrate with your on-premise Active Directory identities. Azure AD also integrates with Office365, Dynamics CRM Online, and many third-party SaaS applications. For consumer-facing applications, Azure Active Directory B2C lets users authenticate with their existing social accounts (such as Facebook, Google, or LinkedIn), or create a new user account that is managed by Azure AD.
 
-If you need to integrate an on-premise Active Directory environment with an Azure network, there are several possible approaches, depending on your requirements. See the [Identity Management][identity-ref-arch] reference architectures.
+If you want to integrate an on-premise Active Directory environment with an Azure network, several approaches are possible, depending on your requirements. For more information, see our [Identity Management][identity-ref-arch] reference architectures.
 
 ### Protect your infrastructure 
 
@@ -139,7 +137,7 @@ Use [Role-Based Access Control][rbac] (RBAC) to grant users within your organiza
 
 ### Application security
 
-In general, the security best practices for application development still apply in the cloud. These include things like using SSL everywhere, protecting against CSRF and CSS attacks, preventing SQL injection attacks, and so on. 
+In general, the security best practices for application development still apply in the cloud. These include things like using SSL everywhere, protecting against CSRF and XSS attacks, preventing SQL injection attacks, and so on. 
 
 Cloud applications often use managed services that have access keys. Never check these into source control. Consider storing application secrets in Azure Key Vault.
 
@@ -147,9 +145,7 @@ Cloud applications often use managed services that have access keys. Never check
 
 Make sure that your data remains in the correct geopolitical zone when using Azure's highly available. Azure's geo-replicated storage uses the concept of a [paired region][paired-region] in the same geopolitical region. 
 
-Use Key Vault to safeguard cryptographic keys and secrets. By using Key Vault, you can encrypt keys and secrets by using keys that are protected by hardware security modules (HSMs). 
-
-Many Azure storage and DB services support data encryption at rest, including [Azure Storage][storage-encryption], [Azure SQL Database][sql-db-encryption], [Azure SQL Data Warehouse][data-warehouse-encryption], and [DocumentDB][documentdb-encryption].
+Use Key Vault to safeguard cryptographic keys and secrets. By using Key Vault, you can encrypt keys and secrets by using keys that are protected by hardware security modules (HSMs). Many Azure storage and DB services support data encryption at rest, including [Azure Storage][storage-encryption], [Azure SQL Database][sql-db-encryption], [Azure SQL Data Warehouse][data-warehouse-encryption], and [DocumentDB][documentdb-encryption].
 
 ### Security resources
 
