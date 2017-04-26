@@ -89,11 +89,11 @@ When designing an application to be resilient, you must understand your availabi
 This pillar covers the operations processes that keep an application running in production.
 
 ### Deployment
-Deployments must be reliable and predictable. They should be automated to reduce the chance of human error. They should be a fast and routine process, so they don’t slow down the release of new features or bug fixes. Equally important, you must be able to quickly roll back or roll forward if an application update has problems.
+Deployments must be reliable and predictable. They should be automated to reduce the chance of human error. They should be a fast and routine process, so they don't slow down the release of new features or bug fixes. Equally important, you must be able to quickly roll back or roll forward if an application update has problems.
 
 ### Monitoring and diagnostics
 
-Cloud applications run in a remote datacenter where you do not have full control of the infrastructure or, in some cases, the operating system. In a large application, it’s not practical to log into VMs in order to troubleshoot an issue or sift through log files. With PaaS services, there may not even be a dedicated VM to log into. 
+Cloud applications run in a remote datacenter where you do not have full control of the infrastructure or, in some cases, the operating system. In a large application, it's not practical to log into VMs in order to troubleshoot an issue or sift through log files. With PaaS services, there may not even be a dedicated VM to log into. 
 
 Monitoring and diagnostics give insight into the system, so that you know when and where failures occur. All systems must be observable. Use a common and consistent logging schema that lets you correlate events across systems.
 
@@ -118,10 +118,65 @@ Some Azure services have built-in functionality that can help with DR. For examp
 - [DevOps checklist][devops-checklist]
 - [Disaster recovery for applications built on Microsoft Azure][dr-guidance]
 
+## Security
+
+You need to think about security throughout the entire lifecycle of an application, from design and implementation to deployment and operations. The Azure platform provides protections against a variety of threats, such as network intrustion and DDoS attacks. But you still need to build security into your application and into your DevOps processes.
+
+Here are some broad security areas to consider. 
+
+> This is not meant to be comprehensive security guidance. We provide some useful links at the end.
+
+### Identity management
+
+Consider using Azure Active Directory (Azure AD) to authenticate and authorize users. Azure AD is a fully managed identity and access management service. You can use it to create domains that exist purely on Azure, or integrate with your on-premise Active Directory identities. Azure AD also ntegrates with Office365, Dynamics CRM Online, and many third-party SaaS applications. For consumer-facing applications, Azure Active Directory B2C lets users authenticate with their existing social accounts (such as Facebook, Google, or LinkedIn), or create a new user account that is managed by Azure Active Directory.
+
+If you need to integrate an on-premise Active Directory environment with an Azure network, there are several possible approaches, depending on your requirements. See the [Identity Management][identity-ref-arch] reference architectures.
+
+### Protect your infrastructure 
+
+Control access to the Azure resources that you deploy. Every Azure subscription has a [trust relationship][ad-subscriptions] with an Azure AD tenant. 
+Use [Role-Based Access Control][rbac] (RBAC) to grant users within your organization the correct permissions to Azure resources. Grant access by assigning RBAC role to users or groups at a certain scope. The scope can be a subscription, a resource group, or a single resource. [Audit][resource-manager-auditing] all changes to infrastructure. 
+
+### Application security
+
+In general, the security best practices for application development still apply in the cloud. These include things like using SSL everywhere, protecting against CSRF and CSS attacks, preventing SQL injection attacks, and so on. 
+
+Cloud applications often use managed services that have access keys. Never check these into source control. Consider storing application secrets in Azure Key Vault.
+
+### Data integrity and encryption
+
+Make sure that your data remains in the correct geopolitical zone when using Azure's highly available. Azure's geo-replicated storage uses the concept of a [paired region][paired-region] in the same geopolitical region. 
+
+Use Key Vault to safeguard cryptographic keys and secrets. By using Key Vault, you can encrypt keys and secrets by using keys that are protected by hardware security modules (HSMs). 
+
+Many Azure storage and DB services support data encryption at rest, including [Azure Storage][storage-encryption], [Azure SQL Database][sql-db-encryption], [Azure SQL Data Warehouse][data-warehouse-encryption], and [DocumentDB][documentdb-encryption].
+
+### Security resources
+
+- [Azure Security Center][security-center] provides integrated security monitoring and policy management across your Azure subscriptions. 
+- [Azure Security Documentation][security-documentation]
+- [Microsoft Trust Center][trust-center]
+
+
 
 <!-- links -->
 
 [dr-guidance]: ../resiliency/disaster-recovery-azure-applications.md
+[identity-ref-arch]: ../reference-architectures/identity.index.md
+
+[ad-subscriptions]: /azure/active-directory/active-directory-how-subscriptions-associated-directory
+[data-warehouse-encryption]: /azure/data-lake-store/data-lake-store-security-overview#data-protection
+[documentdb-encryption]: /azure/documentdb/documentdb-nosql-database-security
+[rbac]: /azure/active-directory/role-based-access-control-what-is
+[paired-region]: /azure/best-practices-availability-paired-regions
+[resource-manager-auditing]: /azure/azure-resource-manager/resource-group-audit
+[security-blog]: https://azure.microsoft.com/blog/tag/security/
+[security-center]: https://azure.microsoft.com/services/security-center/
+[security-documentation]: /azure/security/
+[sql-db-encryption]: /azure/sql-database/sql-database-always-encrypted-azure-key-vault
+[storage-encryption]: /azure/storage/storage-service-encryption
+[trust-center]: https://azure.microsoft.com/support/trust-center/
+ 
 
 <!-- patterns -->
 [availability-patterns]: ../patterns/category/availability.md
