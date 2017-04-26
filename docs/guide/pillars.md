@@ -4,7 +4,7 @@
 
 ## Scalability
 
-Scalability is the ability of a system to handle increased load. There are two main ways that an application can scale. Vertical scaling, or scaling *up*, means increasing the capacity of a resource, for example by using a larger VM size. Horizontal scaling, or scaling *out*, means adding new instances of a resource, such as VMs or database replicas. 
+Scalability is the ability of a system to handle increased load. There are two main ways that an application can scale. Vertical scaling (scaling *up*) means increasing the capacity of a resource, for example by using a larger VM size. Horizontal scaling (scaling *out*) is adding new instances of a resource, such as VMs or database replicas. 
 
 Horizontal scaling has significant advantages over vertical scaling:
 
@@ -16,7 +16,7 @@ Horizontal scaling has significant advantages over vertical scaling:
 
 An advantage of vertical scaling is that you can do it without making any changes to the application. But at some point you'll hit a limit, where you can't scale any up any more. At that point, any further scaling must be horizontal. 
 
-Horizontal scale must be designed into the system from the start. For example, you can scale out VMs by placing them behind a load balancer. But then each VM in the pool must be able to handle any client request, so the application must be stateless or store state externally (say, in a distributed cache). Managed PaaS services often have horizontal scaling and auto-scaling built in. The ease of scaling these services is a major advantage.
+Horizontal scale must be designed into the system. For example, you can scale out VMs by placing them behind a load balancer. But each VM in the pool must be able to handle any client request, so the application must be stateless or store state externally (say, in a distributed cache). Managed PaaS services often have horizontal scaling and auto-scaling built in. The ease of scaling these services is a major advantage of using PaaS services.
 
 Just adding more instances doesn't mean an application will scale, however. It might simply push the bottleneck somewhere else. For example, if you scale a web front-end to handle more client requests, that might trigger lock contentions in the database. You would then need to consider additional measures, such as optimistic concurrency or data partitioning, to enable more throughput to the database.
 
@@ -32,9 +32,9 @@ Always conduct performance and load testing to find these potential bottlenecks.
 
 ## Availability
 
-Availability is the proportion of time that the system is functional and working. It is usually measured as a percentage of uptime.  Application errors, infrastructure problems, and system load can all reduce availability. 
+Availability is the proportion of time that the system is functional and working. It is usually measured as a percentage of uptime. Application errors, infrastructure problems, and system load can all reduce availability. 
 
-A cloud application should have a service level objective (SLO) that clearly defines the expected availability, and how the availability is measured. When defining availability, look at the critical path. The web front-end might be able to service all of the client requests, but if every transaction fails because it can't connect to the database, the application is not available to users. 
+A cloud application should have a service level objective (SLO) that clearly defines the expected availability, and how the availability is measured. When defining availability, look at the critical path. The web front-end might be able to service client requests, but if every transaction fails because it can't connect to the database, the application is not available to users. 
 
 Availability is often described in terms of "9s" &mdash; for example, "four 9s" means 99.99% uptime. The following table shows the potential cumulative downtime at different availability levels.
 
@@ -80,49 +80,45 @@ When designing an application to be resilient, you must understand your availabi
 
 ### Resiliency guidance
 
-- Designing resilient applications for Azure
-- Design patterns for resiliency
-- Transient fault handling
-- Retry guidance for specific services
-- Resiliency checklist
+- [Designing resilient applications for Azure][resiliency]
+- [Design patterns for resiliency][resiliency-patterns]
+- Best practices: [Transient fault handling][transient-fault-handling], [Retry guidance for specific services][retry-service-specific]
+- [Resiliency checklist][resiliency-checklist]
 
 ## Management and DevOps
 
 This pillar covers the operations processes that keep an application running in production.
 
 ### Deployment
-Deployments must be reliable and predictable. They should be automated to reduce the chance of human error. They should be a fast and routine process, so they don't slow down the release of new features or bug fixes. Equally important, you must be able to quickly roll back or roll forward if an application update has problems.
+Deployments must be reliable and predictable. They should be automated to reduce the chance of human error. They should be a fast and routine process, so they don't slow down the release of new features or bug fixes. Equally important, you must be able to quickly roll back or roll forward if an update has problems.
 
 ### Monitoring and diagnostics
 
-Cloud applications run in a remote datacenter where you do not have full control of the infrastructure or, in some cases, the operating system. In a large application, it's not practical to log into VMs in order to troubleshoot an issue or sift through log files. With PaaS services, there may not even be a dedicated VM to log into. 
+Cloud applications run in a remote datacenter where you do not have full control of the infrastructure or, in some cases, the operating system. In a large application, it's not practical to log into VMs in order to troubleshoot an issue or sift through log files. With PaaS services, there may not even be a dedicated VM to log into. For these reasons, good monitoring and diagnostics are crucial.
 
 Monitoring and diagnostics give insight into the system, so that you know when and where failures occur. All systems must be observable. Use a common and consistent logging schema that lets you correlate events across systems.
 
 The monitoring and diagnostics process has several distinct phases:
 
-- Instrumentation - Generating the raw data, from  application logs, web server logs, diagnostics built into the Azure platform, and opther sources.
-- Collection and storage - Consolidating the data into one place
-- Analysis and diagnosis - To troubleshoot issues and see the overall health.
-- Visualization and alerts - Using telemetry data to spot trends (e.g. a dashboard) or alert the operations team.
+- Instrumentation. Generating the raw data, from  application logs, web server logs, diagnostics built into the Azure platform, and opther sources.
+- Collection and storage. Consolidating the data into one place.
+- Analysis and diagnosis. To troubleshoot issues and see the overall health.
+- Visualization and alerts. Using telemetry data to spot trends or alert the operations team.
 
 ### Disaster recovery
 
-Disaster recovery (DR) is the ability to recover from rare but major incidents. It includes backing up and restoring data, redeploying the application, or failing over to another region. 
-
-Some Azure services have built-in functionality that can help with DR. For example, Azure SQL has point-in-time restore and geo-restore.  Other Azure services for DR include Azure Backup and Azure Site Recovery.
-
+Disaster recovery (DR) is the ability to recover from rare but major incidents. It includes backing up and restoring data, redeploying the application, or failing over to another region. Some Azure services have built-in functionality that can help with DR. For example, Azure SQL has point-in-time restore and geo-restore.  Other Azure services for DR include Azure Backup and Azure Site Recovery.
 
 ### Management and DevOps guidance
 
 - [Design patterns for management and monitoring][management-patterns]
-- [Best practices: Monitoring and diagnostics][monitoring]
+- Best practices: [Monitoring and diagnostics][monitoring]
 - [DevOps checklist][devops-checklist]
 - [Disaster recovery for applications built on Microsoft Azure][dr-guidance]
 
 ## Security
 
-You need to think about security throughout the entire lifecycle of an application, from design and implementation to deployment and operations. The Azure platform provides protections against a variety of threats, such as network intrustion and DDoS attacks. But you still need to build security into your application and into your DevOps processes.
+You must think about security throughout the entire lifecycle of an application, from design and implementation to deployment and operations. The Azure platform provides protections against a variety of threats, such as network intrustion and DDoS attacks. But you still need to build security into your application and into your DevOps processes.
 
 Here are some broad security areas to consider. 
 
@@ -161,6 +157,7 @@ Use Key Vault to safeguard cryptographic keys and secrets. By using Key Vault, y
 
 [dr-guidance]: ../resiliency/disaster-recovery-azure-applications.md
 [identity-ref-arch]: ../reference-architectures/identity.index.md
+[resiliency]: ../resilincy/index.md
 
 [ad-subscriptions]: /azure/active-directory/active-directory-how-subscriptions-associated-directory
 [data-warehouse-encryption]: /azure/data-lake-store/data-lake-store-security-overview#data-protection
@@ -179,6 +176,7 @@ Use Key Vault to safeguard cryptographic keys and secrets. By using Key Vault, y
 <!-- patterns -->
 [availability-patterns]: ../patterns/category/availability.md
 [management-patterns]: ../patterns/category/management-monitoring.md
+[resiliency-patterns]: ../patterns/category/resiliency.md
 [scalability-patterns]: ../patterns/category/performance-scalability.md
 
 
@@ -189,8 +187,12 @@ Use Key Vault to safeguard cryptographic keys and secrets. By using Key Vault, y
 [cdn]: ../best-practices/cdn.md
 [data-partitioning]: ../best-practices/data-partitioning.md
 [monitoring]: ../best-practices/monitoring.md
+[retry-service-specific]: ../best-practices/retry-service-specific.md
+[transient-fault-handling]: ../best-practices/transient-faults.md
+
 
 <!-- checklist -->
 [availability-checklist]: ../checklist/availability.md
 [devops-checklist]: ../checklist/dev-ops.md
+[resiliency-checklist]: ../checklist/resiliency.md
 [scalability-checklist]: ../checklist/scalability.md
