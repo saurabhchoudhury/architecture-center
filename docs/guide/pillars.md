@@ -1,6 +1,12 @@
 # Pillars of Software Quality 
 
-[intro goes here :-) ]
+<table>
+<tr><th>Scalability</th><td>The ability of a system to handle increased load.</td></tr>
+<tr><th>Availability</th><td>The proportion of time that the system is functional and working.</td></tr>
+<tr><th>Resiliency</th><td>The ability of the system to recover from failures and continue to function.</td></tr>
+<tr><th>Management</th><td>Operations processes that keep an application running in production.</td></tr>
+<tr><th>Security</th><td>Protecting applications and data from threats.</td></tr>
+</table>
 
 ## Scalability
 
@@ -22,13 +28,14 @@ Just adding more instances doesn't mean an application will scale, however. It m
 
 Always conduct performance and load testing to find these potential bottlenecks. The stateful parts of a system, such as databases, are the most common cause of bottlenecks, and require careful design in order to scale horizontally. Resolving one bottleneck may reveal other bottlenecks elsewhere.
 
-### Scalability guidance
+Use the [Scalability checklist][scalability-checklist] to review your design from a scalability standpoint.
 
+### Scalability guidance
 
 - [Design patterns for scalability and performance][scalability-patterns]
 - Performance anti-patterns
 - Best practices: [Autoscaling][autoscale], [Background jobs][background-jobs], [Caching][caching], [CDN][cdn], [Data partitioning][data-partitioning]
-- [Scalability checklist][scalability-checklist] 
+
 
 ## Availability
 
@@ -50,11 +57,12 @@ Notice that 99% uptime could translate to an almost 2-hour service outage per we
 
 In Azure, the Service Level Agreement (SLA) describes Microsoft's commitments for uptime and connectivity. If the SLA for a particular service is 99.95%, it means you should expect the service to be available 99.95% of the time.
 
+Use the [Availability checklist][availability-checklist] to review your design from an availability standpoint.
+
 ### Availability guidance
 
 - [Design patterns for availability][availability-patterns]
 - Best practices: [Autoscaling][autoscale], [Background jobs][background-jobs]
-- [Availability checklist][availability-checklist] 
 
 ## Resiliency
 
@@ -77,30 +85,21 @@ That said, you still need to build resiliency your application. Resiliency strat
 
 When designing an application to be resilient, you must understand your availability requirements. How much downtime is acceptable? This is partly a function of cost. How much will potential downtime cost your business? How much should you invest in making the application highly available?
 
-### Disaster recovery
-
-Disaster recovery (DR) is the ability to recover from rare but major incidents. It includes backing up and restoring data, redeploying the application, or failing over to another region. Some Azure services have built-in functionality that can help with DR. For example, Azure SQL has point-in-time restore and geo-restore.  Other Azure services for DR include Azure Backup and Azure Site Recovery.
+Use the [Resiliency checklist][resiliency-checklist] to review your design from a resiliency standpoint.
 
 ### Resiliency guidance
 
 - [Designing resilient applications for Azure][resiliency]
 - [Design patterns for resiliency][resiliency-patterns]
 - Best practices: [Transient fault handling][transient-fault-handling], [Retry guidance for specific services][retry-service-specific]
-- [Resiliency checklist][resiliency-checklist]
-- [Disaster recovery for applications built on Microsoft Azure][dr-guidance]
 
 ## Management and DevOps
 
 This pillar covers the operations processes that keep an application running in production.
 
-### Deployment
 Deployments must be reliable and predictable. They should be automated to reduce the chance of human error. They should be a fast and routine process, so they don't slow down the release of new features or bug fixes. Equally important, you must be able to quickly roll back or roll forward if an update has problems.
 
-### Monitoring and diagnostics
-
-Cloud applications run in a remote datacenter where you do not have full control of the infrastructure or, in some cases, the operating system. In a large application, it's not practical to log into VMs in order to troubleshoot an issue or sift through log files. With PaaS services, there may not even be a dedicated VM to log into. For these reasons, good monitoring and diagnostics are crucial.
-
-Monitoring and diagnostics give insight into the system, so that you know when and where failures occur. All systems must be observable. Use a common and consistent logging schema that lets you correlate events across systems.
+Monitoring and diagnostics are crucial. Cloud applications run in a remote datacenter where you do not have full control of the infrastructure or, in some cases, the operating system. In a large application, it's not practical to log into VMs in order to troubleshoot an issue or sift through log files. With PaaS services, there may not even be a dedicated VM to log into. Monitoring and diagnostics give insight into the system, so that you know when and where failures occur. All systems must be observable. Use a common and consistent logging schema that lets you correlate events across systems.
 
 The monitoring and diagnostics process has several distinct phases:
 
@@ -109,11 +108,12 @@ The monitoring and diagnostics process has several distinct phases:
 - Analysis and diagnosis. To troubleshoot issues and see the overall health.
 - Visualization and alerts. Using telemetry data to spot trends or alert the operations team.
 
+Use the [DevOps checklist][devops-checklist] to review your design from a management and DevOps standpoint.
+
 ### Management and DevOps guidance
 
 - [Design patterns for management and monitoring][management-patterns]
 - Best practices: [Monitoring and diagnostics][monitoring]
-- [DevOps checklist][devops-checklist]
 
 ## Security
 
