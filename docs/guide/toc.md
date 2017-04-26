@@ -27,4 +27,6 @@
 ### [Design for evolution](./design-principles/design-for-evolution.md)
 ### [Build for the needs of business](./design-principles/build-for-business.md)
 
-## Design pillars
+## [Design pillars](./pillars.md)
+
+## [Cloud design patterns](./patterns/index.md?toc=/azure/architecture/patterns/toc.json)
