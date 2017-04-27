@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="168.09737mm"
-   height="168.71408mm"
-   viewBox="0 0 595.62059 597.8058"
+   width="141.05495mm"
+   height="141.77641mm"
+   viewBox="0 0 499.80099 502.35737"
    id="svg4157"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -31,100 +31,107 @@
        inkscape:isstock="true"
        style="overflow:visible"
        id="marker5330"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="TriangleOutS">
       <path
-         transform="scale(0.2)"
-         style="fill-rule:evenodd;stroke:#5da2d7;stroke-width:1pt;stroke-opacity:1;fill:#5da2d7;fill-opacity:1"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
-         id="path5332" />
+         transform="scale(0.2,0.2)"
+         style="fill:#5da2d7;fill-opacity:1;fill-rule:evenodd;stroke:#5da2d7;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path5332"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:isstock="true"
        style="overflow:visible"
        id="marker5162"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="TriangleOutS">
       <path
-         transform="scale(0.2)"
-         style="fill-rule:evenodd;stroke:#5da2d7;stroke-width:1pt;stroke-opacity:1;fill:#5da2d7;fill-opacity:1"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
-         id="path5164" />
+         transform="scale(0.2,0.2)"
+         style="fill:#5da2d7;fill-opacity:1;fill-rule:evenodd;stroke:#5da2d7;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path5164"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:isstock="true"
        style="overflow:visible"
        id="marker5158"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="TriangleOutS">
       <path
-         transform="scale(0.2)"
-         style="fill-rule:evenodd;stroke:#5da2d7;stroke-width:1pt;stroke-opacity:1;fill:#5da2d7;fill-opacity:1"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
-         id="path5160" />
+         transform="scale(0.2,0.2)"
+         style="fill:#5da2d7;fill-opacity:1;fill-rule:evenodd;stroke:#5da2d7;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path5160"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="TriangleOutS"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker5154"
        style="overflow:visible"
        inkscape:isstock="true"
        inkscape:collect="always">
       <path
          id="path5156"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
-         style="fill-rule:evenodd;stroke:#5da2d7;stroke-width:1pt;stroke-opacity:1;fill:#5da2d7;fill-opacity:1"
-         transform="scale(0.2)" />
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#5da2d7;fill-opacity:1;fill-rule:evenodd;stroke:#5da2d7;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2,0.2)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="TriangleOutS"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="TriangleOutS"
        style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path4998"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
-         style="fill-rule:evenodd;stroke:#5da2d7;stroke-width:1pt;stroke-opacity:1;fill:#5da2d7;fill-opacity:1"
-         transform="scale(0.2)" />
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#5da2d7;fill-opacity:1;fill-rule:evenodd;stroke:#5da2d7;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2,0.2)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="TriangleOutM"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="TriangleOutM"
        style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path4995"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
-         style="fill-rule:evenodd;stroke:#5da2d7;stroke-width:1pt;stroke-opacity:1;fill:#5da2d7;fill-opacity:1"
-         transform="scale(0.4)" />
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#5da2d7;fill-opacity:1;fill-rule:evenodd;stroke:#5da2d7;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4,0.4)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow2Mend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow2Mend"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path4877"
-         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#5da2d7;stroke-opacity:1;fill:#5da2d7;fill-opacity:1"
-         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
-         transform="scale(0.6) rotate(180) translate(0,0)" />
+         style="fill:#5da2d7;fill-opacity:1;fill-rule:evenodd;stroke:#5da2d7;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Mend"
@@ -255,13 +262,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="185.74786"
-     inkscape:cy="446.22128"
+     inkscape:cx="190.78389"
+     inkscape:cy="237.66062"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1536"
-     inkscape:window-height="897"
+     inkscape:window-height="801"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -271,7 +278,9 @@
      fit-margin-bottom="0">
     <inkscape:grid
        type="xygrid"
-       id="grid5245" />
+       id="grid5245"
+       originx="-39.921327"
+       originy="-33.350011" />
   </sodipodi:namedview>
   <metadata
      id="metadata4162">
@@ -281,7 +290,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -289,7 +298,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-6.5714243,-91.556419)">
+     transform="translate(-46.492752,-153.65486)">
     <circle
        style="fill:none;fill-opacity:1;stroke:#d2e4f2;stroke-width:3.5999999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="circle5592"
@@ -341,102 +350,102 @@
          style="fill:#eaeaea" />
       <polygon
          id="polygon13"
-         points="30.34,24.48 32,25.4 32,24 32,4 26.72,22.47 26.72,22.47 "
+         points="32,4 26.72,22.47 26.72,22.47 30.34,24.48 32,25.4 32,24 "
          class="cls-1"
          style="fill:#dedede" />
       <polygon
          id="polygon15"
-         points="32,60 37.28,41.53 33.66,39.52 33.66,39.52 32.14,38.67 32,38.6 32,38.75 32,40 "
+         points="33.66,39.52 32.14,38.67 32,38.6 32,38.75 32,40 32,60 37.28,41.53 33.66,39.52 "
          class="cls-1"
          style="fill:#dedede" />
       <polygon
          id="polygon17"
-         points="33.66,24.48 32,25.4 32,24 32,4 37.28,22.47 37.28,22.47 "
+         points="32,4 37.28,22.47 37.28,22.47 33.66,24.48 32,25.4 32,24 "
          class="cls-3"
          style="fill:#ffffff" />
       <polygon
          id="polygon19"
-         points="32,60 26.72,41.53 30.34,39.52 30.34,39.52 31.86,38.67 32,38.6 32,38.75 32,40 "
+         points="30.34,39.52 31.86,38.67 32,38.6 32,38.75 32,40 32,60 26.72,41.53 30.34,39.52 "
          class="cls-3"
          style="fill:#ffffff" />
       <polygon
          id="polygon21"
-         points="24.48,33.66 25.4,32 24,32 4,32 22.47,37.28 22.47,37.28 "
+         points="4,32 22.47,37.28 22.47,37.28 24.48,33.66 25.4,32 24,32 "
          class="cls-1"
          style="fill:#dedede" />
       <polygon
          id="polygon23"
-         points="60,32 41.53,26.72 39.52,30.34 39.52,30.34 38.67,31.86 38.6,32 38.75,32 40,32 "
+         points="39.52,30.34 38.67,31.86 38.6,32 38.75,32 40,32 60,32 41.53,26.72 39.52,30.34 "
          class="cls-1"
          style="fill:#dedede" />
       <polygon
          id="polygon25"
-         points="24.48,30.34 25.4,32 24,32 4,32 22.47,26.72 22.47,26.72 "
+         points="4,32 22.47,26.72 22.47,26.72 24.48,30.34 25.4,32 24,32 "
          class="cls-3"
          style="fill:#ffffff" />
       <polygon
          id="polygon27"
-         points="60,32 41.53,37.28 39.52,33.66 39.52,33.66 38.67,32.14 38.6,32 38.75,32 40,32 "
+         points="39.52,33.66 38.67,32.14 38.6,32 38.75,32 40,32 60,32 41.53,37.28 39.52,33.66 "
          class="cls-3"
          style="fill:#ffffff" />
       <polygon
          id="polygon29"
-         points="32,32 17.15,17.15 17.15,17.15 25.4,32 25.48,32 "
+         points="25.4,32 25.48,32 32,32 17.15,17.15 17.15,17.15 "
          class="cls-1"
          style="fill:#dedede" />
       <polygon
          id="polygon31"
-         points="32,32 17.15,46.85 17.15,46.85 25.4,32 25.48,32 "
+         points="25.4,32 25.48,32 32,32 17.15,46.85 17.15,46.85 "
          class="cls-3"
          style="fill:#ffffff" />
       <polygon
          id="polygon33"
-         points="32,32 17.15,46.85 17.15,46.85 32,38.6 32,38.52 "
+         points="32,38.6 32,38.52 32,32 17.15,46.85 17.15,46.85 "
          class="cls-1"
          style="fill:#dedede" />
       <polygon
          id="polygon35"
-         points="32,32 46.85,46.85 46.85,46.85 32,38.6 32,38.52 "
+         points="32,38.6 32,38.52 32,32 46.85,46.85 46.85,46.85 "
          class="cls-3"
          style="fill:#ffffff" />
       <polygon
          id="polygon37"
-         points="32,32 46.85,46.85 46.85,46.85 38.6,32 38.52,32 "
+         points="38.6,32 38.52,32 32,32 46.85,46.85 46.85,46.85 "
          class="cls-1"
          style="fill:#dedede" />
       <polygon
          id="polygon39"
-         points="32,32 46.85,17.15 46.85,17.15 38.6,32 38.52,32 "
+         points="38.6,32 38.52,32 32,32 46.85,17.15 46.85,17.15 "
          class="cls-3"
          style="fill:#ffffff" />
       <polygon
          id="polygon41"
-         points="32,32 46.85,17.15 46.85,17.15 32,25.4 32,25.48 "
+         points="32,25.4 32,25.48 32,32 46.85,17.15 46.85,17.15 "
          class="cls-1"
          style="fill:#dedede" />
       <polygon
          id="polygon43"
-         points="32,32 17.15,17.15 17.15,17.15 32,25.4 32,25.48 "
+         points="32,25.4 32,25.48 32,32 17.15,17.15 17.15,17.15 "
          class="cls-3"
          style="fill:#ffffff" />
       <polygon
          id="polygon45"
-         points="51.88,12.28 28,28 28,28 12.28,51.88 36,36 "
+         points="12.28,51.88 36,36 51.88,12.28 28,28 28,28 "
          class="cls-4"
          style="fill:#3899c5" />
       <polygon
          id="polygon47"
-         points="36,36 32.08,32.08 12.28,51.88 12.28,51.88 "
+         points="12.28,51.88 36,36 32.08,32.08 12.28,51.88 "
          class="cls-5"
          style="fill:#58b6da" />
       <polygon
          id="polygon49"
-         points="28,28 32.08,32.08 51.88,12.28 51.88,12.28 "
+         points="51.88,12.28 28,28 32.08,32.08 51.88,12.28 "
          class="cls-6"
          style="fill:#1881ce" />
       <polygon
          id="polygon51"
-         points="36,36 31.92,31.92 51.88,12.28 51.88,12.28 "
+         points="51.88,12.28 36,36 31.92,31.92 51.88,12.28 "
          class="cls-7"
          style="fill:#0271c5" />
       <circle
@@ -481,7 +490,7 @@
     <text
        class="guide-step"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:12.5px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:segoe-ui_normal, 'Segoe UI', Segoe, 'Segoe WP', 'Helvetica Neue', Helvetica, sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="297.70325"
        y="299.97305"
        id="text4705"
@@ -492,7 +501,7 @@
          y="299.97305">Architecture</tspan><tspan
          sodipodi:role="line"
          x="297.70325"
-         y="312.47305"
+         y="315.59805"
          id="tspan4709">Styles</tspan></text>
     <circle
        r="43.928574"
@@ -521,20 +530,20 @@
        id="text4759"
        y="388.31152"
        x="417.24033"
-       style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:12.5px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:segoe-ui_normal, 'Segoe UI', Segoe, 'Segoe WP', 'Helvetica Neue', Helvetica, sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          id="tspan4763"
          y="388.31152"
          x="417.24033"
          sodipodi:role="line">Technology</tspan><tspan
-         y="400.81152"
+         y="403.93652"
          x="417.24033"
          sodipodi:role="line"
          id="tspan4767">Choices</tspan></text>
     <text
        class="guide-step"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:12.5px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:segoe-ui_normal, 'Segoe UI', Segoe, 'Segoe WP', 'Helvetica Neue', Helvetica, sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="368.96881"
        y="526.13757"
        id="text4769"
@@ -545,7 +554,7 @@
          y="526.13757">Design</tspan><tspan
          sodipodi:role="line"
          x="368.96881"
-         y="538.63757"
+         y="541.76257"
          id="tspan4777">Principles</tspan></text>
     <text
        class="guide-step"
@@ -553,20 +562,20 @@
        id="text4779"
        y="529.40338"
        x="226.11821"
-       style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:12.5px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:segoe-ui_normal, 'Segoe UI', Segoe, 'Segoe WP', 'Helvetica Neue', Helvetica, sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          id="tspan4783"
          y="529.40338"
          x="226.11821"
          sodipodi:role="line">Quality</tspan><tspan
-         y="541.90338"
+         y="545.02838"
          x="226.11821"
          sodipodi:role="line"
          id="tspan4787">Pillars</tspan></text>
     <text
        class="guide-step"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:12.5px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:segoe-ui_normal, 'Segoe UI', Segoe, 'Segoe WP', 'Helvetica Neue', Helvetica, sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="177.41544"
        y="388.27982"
        id="text4789"
@@ -577,7 +586,7 @@
          y="388.27982">Design</tspan><tspan
          sodipodi:role="line"
          x="177.41544"
-         y="400.77982"
+         y="403.90482"
          id="tspan4797">Patterns</tspan></text>
     <g
        id="g4442"
@@ -587,7 +596,7 @@
       <polygon
          style="fill:#3b3b3b"
          id="svg_1"
-         points="64,25.5 59.67,31.5 3.67,31.5 0,25.5 64,25.5 "
+         points="0,25.5 64,25.5 64,25.5 59.67,31.5 3.67,31.5 "
          class="cls-1" />
       <path
          style="fill:#ba1418"
@@ -650,7 +659,7 @@
         <polygon
            style="fill:#ffffff"
            class="cls-2"
-           points="0,52 52,64 64,38 64,16 46,10.24 46,10.24 14,0 5.74,30.68 "
+           points="64,16 46,10.24 46,10.24 14,0 5.74,30.68 0,52 52,64 64,38 "
            id="svg_2-8" />
         <g
            style="mix-blend-mode:multiply;fill:#dedede"
@@ -659,52 +668,52 @@
           <polygon
              style="opacity:0.05;fill:#ff0000"
              class="cls-4"
-             points="14,0 14,0 0,52 18,26 "
+             points="18,26 14,0 14,0 0,52 "
              id="svg_4-9" />
           <polygon
              style="opacity:0.07000002;fill:#ff0000"
              class="cls-5"
-             points="54,30 54,30 14,0 18,26 "
+             points="18,26 54,30 54,30 14,0 "
              id="svg_5-0" />
           <polygon
              style="opacity:0.1;fill:#ff0000"
              class="cls-6"
-             points="18,26 18,26 0,52 54,30 "
+             points="54,30 18,26 18,26 0,52 "
              id="svg_6-3" />
           <polygon
              style="opacity:0.05;fill:#ff0000"
              class="cls-4"
-             points="46,10.24 46,10.24 14,0 54,30 "
+             points="54,30 46,10.24 46,10.24 14,0 "
              id="svg_7-1" />
           <polygon
              style="opacity:0.07000002;fill:#ff0000"
              class="cls-5"
-             points="64,16 64,16 46,10.24 54,30 "
+             points="54,30 64,16 64,16 46,10.24 "
              id="svg_8-7" />
           <polygon
              style="opacity:0.2;fill:#ff0000"
              class="cls-7"
-             points="0,52 0,52 52,64 36,54 "
+             points="36,54 0,52 0,52 52,64 "
              id="svg_9" />
           <polygon
              style="opacity:0.15;fill:#ff0000"
              class="cls-8"
-             points="54,30 54,30 64,38 64,16 "
+             points="64,16 54,30 54,30 64,38 "
              id="svg_10" />
           <polygon
              style="opacity:0.05;fill:#ff0000"
              class="cls-4"
-             points="54,30 54,30 0,52 36,54 "
+             points="36,54 54,30 54,30 0,52 "
              id="svg_11" />
           <polygon
              style="opacity:0.07000002;fill:#ff0000"
              class="cls-5"
-             points="52,64 52,64 64,38 54,30 "
+             points="54,30 52,64 52,64 64,38 "
              id="svg_12" />
           <polygon
              style="opacity:0.12000002;fill:#ff0000"
              class="cls-9"
-             points="36,54 36,54 52,64 54,30 "
+             points="54,30 36,54 36,54 52,64 "
              id="svg_13" />
         </g>
         <g
@@ -714,52 +723,52 @@
           <polygon
              style="opacity:0.2;fill:#ff0000"
              class="cls-7"
-             points="14,0 33.26,14.64 64,16 64,16 46,10.24 "
+             points="64,16 46,10.24 14,0 33.26,14.64 64,16 "
              id="svg_15" />
           <polygon
              style="opacity:0.05;fill:#ff0000"
              class="cls-4"
-             points="33.26,14.64 33.26,14.64 14,0 22,34 "
+             points="22,34 33.26,14.64 33.26,14.64 14,0 "
              id="svg_16" />
           <polygon
              style="opacity:0.12000002;fill:#ff0000"
              class="cls-9"
-             points="45.49,23.93 64,16 33.26,14.64 33.26,14.64 22,34 "
+             points="33.26,14.64 22,34 45.49,23.93 64,16 33.26,14.64 "
              id="svg_17" />
           <polygon
              style="opacity:0.15;fill:#ff0000"
              class="cls-8"
-             points="64,38 64,16 59.38,34.49 59.38,34.49 52,64 "
+             points="59.38,34.49 52,64 64,38 64,16 59.38,34.49 "
              id="svg_18" />
           <polygon
              style="opacity:0.2;fill:#ff0000"
              class="cls-7"
-             points="0,52 0,52 52,64 24.3,53.47 "
+             points="24.3,53.47 0,52 0,52 52,64 "
              id="svg_19" />
           <polygon
              style="opacity:0.07000002;fill:#ff0000"
              class="cls-5"
-             points="0,52 24.3,53.47 23.93,53.33 23.93,53.33 22.89,42.95 22,34 "
+             points="23.93,53.33 22.89,42.95 22,34 0,52 24.3,53.47 23.93,53.33 "
              id="svg_20" />
           <polygon
              style="opacity:0.07000002;fill:#ff0000"
              class="cls-5"
-             points="38.57,50.57 52,64 59.38,34.49 64,16 45.49,23.93 45.49,23.93 22,34 28.58,40.58 "
+             points="64,16 45.49,23.93 45.49,23.93 22,34 28.58,40.58 38.57,50.57 52,64 59.38,34.49 "
              id="svg_21" />
           <polygon
              style="opacity:0.1;fill:#ff0000"
              class="cls-6"
-             points="22.89,42.95 23.93,53.33 24.3,53.47 52,64 38.57,50.57 38.57,50.57 28.58,40.58 22,34 "
+             points="52,64 38.57,50.57 38.57,50.57 28.58,40.58 22,34 22.89,42.95 23.93,53.33 24.3,53.47 "
              id="svg_22" />
           <polygon
              style="opacity:0.05;fill:#ff0000"
              class="cls-4"
-             points="22,34 22,34 5.74,30.68 0,52 "
+             points="0,52 22,34 22,34 5.74,30.68 "
              id="svg_23" />
           <polygon
              style="opacity:0.1;fill:#ff0000"
              class="cls-6"
-             points="5.74,30.68 22,34 5.75,30.64 5.75,30.64 22,34 14,0 "
+             points="5.75,30.64 22,34 14,0 5.74,30.68 22,34 5.75,30.64 "
              id="svg_24" />
         </g>
       </g>
@@ -777,7 +786,7 @@
          style="fill:#ffd214" />
       <polygon
          class="cls-2"
-         points="24,60 28.5,64 36,64 40,60 24,60 "
+         points="40,60 24,60 24,60 28.5,64 36,64 "
          id="svg_2-3"
          style="fill:#eaeaea" />
       <rect
@@ -790,7 +799,7 @@
          style="fill:#eaeaea" />
       <polygon
          class="cls-3"
-         points="24,56 24,60 40,56 40,52 24,56 "
+         points="40,52 24,56 24,56 24,60 40,56 "
          id="svg_4-1"
          style="fill:#dedede" />
       <rect
@@ -803,7 +812,7 @@
          style="fill:#dedede" />
       <polygon
          class="cls-2"
-         points="24,52 24,56 40,52 40,48 24,52 "
+         points="40,48 24,52 24,52 24,56 40,52 "
          id="svg_6-37"
          style="fill:#eaeaea" />
       <ellipse
@@ -1154,7 +1163,7 @@
        id="text7542-0-1"
        y="646.97656"
        x="419.88165"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:125%;-inkscape-font-specification:'segoe-ui_normal, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Helvetica, sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:125%;font-family:segoe-ui_normal, 'Segoe UI', Segoe, 'Segoe WP', 'Helvetica Neue', Helvetica, sans-serif;-inkscape-font-specification:'segoe-ui_normal, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Helvetica, sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          y="646.97656"
          x="419.88165"
@@ -1165,19 +1174,19 @@
        id="text7542-0-1-0"
        y="641.81787"
        x="175.53329"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-font-specification:'segoe-ui_normal, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Helvetica, sans-serif, Normal';"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:125%;font-family:segoe-ui_normal, 'Segoe UI', Segoe, 'Segoe WP', 'Helvetica Neue', Helvetica, sans-serif;-inkscape-font-specification:'segoe-ui_normal, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Helvetica, sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          y="641.81787"
          x="175.53329"
          sodipodi:role="line"
          id="tspan5462-4-6">Design Review</tspan><tspan
-         y="654.31787"
+         y="655.88037"
          x="175.53329"
          sodipodi:role="line"
          id="tspan5615">Checklists</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-size:11.25px;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-size:11.25px;line-height:125%;font-family:segoe-ui_normal, 'Segoe UI', Segoe, 'Segoe WP', 'Helvetica Neue', Helvetica, sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="115.14285"
        y="187.93362"
        id="text5617"
@@ -1191,19 +1200,19 @@
        id="text7542-0-1-0-0"
        y="410.75677"
        x="93.254715"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-font-specification:'segoe-ui_normal, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Helvetica, sans-serif, Normal';"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:125%;font-family:segoe-ui_normal, 'Segoe UI', Segoe, 'Segoe WP', 'Helvetica Neue', Helvetica, sans-serif;-inkscape-font-specification:'segoe-ui_normal, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Helvetica, sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          y="410.75677"
          x="93.254715"
          sodipodi:role="line"
          id="tspan5615-5">Cloud Design</tspan><tspan
-         y="423.25677"
+         y="424.81927"
          x="93.254715"
          sodipodi:role="line"
          id="tspan5644">Patterns</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:125%;-inkscape-font-specification:'segoe-ui_normal, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Helvetica, sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:125%;font-family:segoe-ui_normal, 'Segoe UI', Segoe, 'Segoe WP', 'Helvetica Neue', Helvetica, sans-serif;-inkscape-font-specification:'segoe-ui_normal, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Helvetica, sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="297.67349"
        y="162.10335"
        id="text5899"
@@ -1221,7 +1230,7 @@
        id="text5913"
        y="406.56027"
        x="511.82584"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:125%;-inkscape-font-specification:'segoe-ui_normal, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Helvetica, sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:125%;font-family:segoe-ui_normal, 'Segoe UI', Segoe, 'Segoe WP', 'Helvetica Neue', Helvetica, sans-serif;-inkscape-font-specification:'segoe-ui_normal, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Helvetica, sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          sodipodi:role="line"
          id="tspan5919"
