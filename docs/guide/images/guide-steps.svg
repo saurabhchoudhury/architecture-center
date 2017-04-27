@@ -21,6 +21,9 @@
    text {
        font-family: segoe-ui_normal,Segoe UI,Segoe,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
    }
+   .guide-step {
+       font-weight: 600;
+   }
    ]]></style>
   <defs
      id="defs4159">
@@ -476,8 +479,9 @@
        cy="303.86221"
        r="56.785717" />
     <text
+       class="guide-step"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:12.5px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-weight:bold;"
+       style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:12.5px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="297.70325"
        y="299.97305"
        id="text4705"
@@ -512,11 +516,12 @@
        style="fill:#ffffff;fill-opacity:1;stroke:#3c3c3c;stroke-width:1.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        transform="matrix(-0.80901699,0.58778526,-0.58778526,-0.80901699,0,0)" />
     <text
+       class="guide-step"
        sodipodi:linespacing="125%"
        id="text4759"
        y="388.31152"
        x="417.24033"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:12.5px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        xml:space="preserve"><tspan
          id="tspan4763"
          y="388.31152"
@@ -527,8 +532,9 @@
          sodipodi:role="line"
          id="tspan4767">Choices</tspan></text>
     <text
+       class="guide-step"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:12.5px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="368.96881"
        y="526.13757"
        id="text4769"
@@ -540,13 +546,14 @@
          sodipodi:role="line"
          x="368.96881"
          y="538.63757"
-         id="tspan4777">principles</tspan></text>
+         id="tspan4777">Principles</tspan></text>
     <text
+       class="guide-step"
        sodipodi:linespacing="125%"
        id="text4779"
        y="529.40338"
        x="226.11821"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:12.5px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        xml:space="preserve"><tspan
          id="tspan4783"
          y="529.40338"
@@ -557,8 +564,9 @@
          sodipodi:role="line"
          id="tspan4787">Pillars</tspan></text>
     <text
+       class="guide-step"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:12.5px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="177.41544"
        y="388.27982"
        id="text4789"
@@ -1151,7 +1159,7 @@
          y="646.97656"
          x="419.88165"
          sodipodi:role="line"
-         id="tspan5462-4">Best practices</tspan></text>
+         id="tspan5462-4">Best Practices</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text7542-0-1-0"
@@ -1162,11 +1170,11 @@
          y="641.81787"
          x="175.53329"
          sodipodi:role="line"
-         id="tspan5462-4-6">Design review</tspan><tspan
+         id="tspan5462-4-6">Design Review</tspan><tspan
          y="654.31787"
          x="175.53329"
          sodipodi:role="line"
-         id="tspan5615">checklists</tspan></text>
+         id="tspan5615">Checklists</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-size:11.25px;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -1188,11 +1196,11 @@
          y="410.75677"
          x="93.254715"
          sodipodi:role="line"
-         id="tspan5615-5">Cloud design</tspan><tspan
+         id="tspan5615-5">Cloud Design</tspan><tspan
          y="423.25677"
          x="93.254715"
          sodipodi:role="line"
-         id="tspan5644">patterns</tspan></text>
+         id="tspan5644">Patterns</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:125%;-inkscape-font-specification:'segoe-ui_normal, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Helvetica, sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -1218,7 +1226,7 @@
          sodipodi:role="line"
          id="tspan5919"
          x="511.82584"
-         y="406.56027">Compute</tspan><tspan
+         y="406.56027">Compute,</tspan><tspan
          sodipodi:role="line"
          id="tspan5921"
          x="511.82584"
